@@ -1,2627 +1,2707 @@
 <!doctype html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mappia Digital — Posicionamento Digital e Novo Canal de Vendas</title>
-    <meta
-      name="description"
-      content="A Mappia constrói o seu posicionamento digital e abre um novo canal de vendas para o seu negócio local. Diagnóstico gratuito, entrega em 10 dias, feito 100% por nós."
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap"
-      rel="stylesheet"
-    />
-    <style>
-      :root {
-        --blue: #1560bd;
-        --blue-mid: #2b7fe8;
-        --blue-light: #e6f1fb;
-        --teal: #0f6e56;
-        --teal-light: #1d9e75;
-        --navy: #091e42;
-        --navy-mid: #172b4d;
-        --off: #f7f8fa;
-        --muted: #6b7a99;
-        --border: rgba(9, 30, 66, 0.08);
-        --white: #ffffff;
-        --radius: 16px;
-        --radius-lg: 24px;
-        --radius-pill: 999px;
-      }
 
-      *,
-      *::before,
-      *::after {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mappia Digital — Posicionamento Digital e Novo Canal de Vendas</title>
+  <meta name="description"
+    content="A Mappia constrói o seu posicionamento digital e abre um novo canal de vendas para o seu negócio local. Diagnóstico gratuito, entrega em 10 dias, feito 100% por nós." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&amp;family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&amp;display=swap"
+    rel="stylesheet" />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <style>
+    :root {
+      --blue: #1560bd;
+      --blue-mid: #2b7fe8;
+      --blue-light: #e6f1fb;
+      --purple: #7C3AED;
+      --purple-light: #9333EA;
+      --navy: #091e42;
+      --navy-mid: #172b4d;
+      --off: #f7f8fa;
+      --muted: #6b7a99;
+      --border: rgba(9, 30, 66, 0.08);
+      --white: #ffffff;
+      --radius: 16px;
+      --radius-lg: 24px;
+      --radius-pill: 999px;
+    }
 
-      html {
-        scroll-behavior: smooth;
-        font-size: 16px;
-      }
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-      body {
-        font-family: "DM Sans", sans-serif;
-        background: var(--white);
-        color: var(--navy);
-        overflow-x: hidden;
-        -webkit-font-smoothing: antialiased;
-      }
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
 
-      /* ─── NAV ─────────────────────────────────── */
-      nav {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: 100;
-        padding: 0 clamp(1.5rem, 5vw, 6rem);
-        height: 68px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        background: rgba(255, 255, 255, 0.85);
-        backdrop-filter: blur(16px);
-        border-bottom: 1px solid var(--border);
-        transition: box-shadow 0.3s;
-      }
-      nav.scrolled {
-        box-shadow: 0 4px 40px rgba(9, 30, 66, 0.08);
-      }
+    body {
+      font-family: "DM Sans", sans-serif;
+      background: var(--white);
+      color: var(--navy);
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
 
-      .nav-logo {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        text-decoration: none;
-        color: var(--navy);
-      }
-      .nav-logo-icon {
-        width: 36px;
-        height: 36px;
-        background: linear-gradient(135deg, #2b7fe8 0%, #1d9e75 100%);
-        border-radius: 10px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-      }
-      .nav-logo-icon svg {
-        width: 20px;
-        height: 20px;
-      }
-      .nav-logo-text {
-        font-family: "Outfit", sans-serif;
-        font-weight: 700;
-        font-size: 1.1rem;
-        letter-spacing: -0.02em;
-      }
-      .nav-logo-text span {
-        color: var(--blue-mid);
-      }
+    /* ─── NAV ─────────────────────────────────── */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      padding: 0 clamp(1.5rem, 5vw, 6rem);
+      height: 68px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+      transition: box-shadow 0.3s;
+    }
 
-      .nav-links {
-        display: flex;
-        align-items: center;
-        gap: 2rem;
-        list-style: none;
-      }
-      .nav-links a {
-        font-size: 0.875rem;
-        font-weight: 500;
-        color: var(--muted);
-        text-decoration: none;
-        transition: color 0.2s;
-      }
-      .nav-links a:hover {
-        color: var(--navy);
-      }
+    nav.scrolled {
+      box-shadow: 0 4px 40px rgba(9, 30, 66, 0.08);
+    }
 
-      .nav-cta {
-        background: var(--navy);
-        color: #fff;
-        padding: 0.55rem 1.25rem;
-        border-radius: var(--radius-pill);
-        font-size: 0.875rem;
-        font-weight: 500;
-        text-decoration: none;
-        transition:
-          background 0.2s,
-          transform 0.15s;
-        white-space: nowrap;
-      }
-      .nav-cta:hover {
-        background: var(--blue);
-        transform: translateY(-1px);
-      }
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--navy);
+    }
 
-      .nav-mobile-toggle {
-        display: none;
-        background: none;
-        border: none;
-        cursor: pointer;
-        padding: 4px;
-      }
+    .nav-logo-icon {
+      width: 55px;
+      height: 55px;
+      background: transparent;
+      border-radius: 8px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      object-fit: cover;
+    }
 
-      /* ─── HERO ─────────────────────────────────── */
-      .hero {
-        min-height: 100vh;
-        padding: 120px clamp(1.5rem, 5vw, 6rem) 80px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 4rem;
-        align-items: center;
-        position: relative;
-        overflow: hidden;
-      }
+    .nav-logo-icon svg {
+      width: 20px;
+      height: 20px;
+    }
 
-      .hero-bg {
-        position: absolute;
-        inset: 0;
-        pointer-events: none;
-        background:
-          radial-gradient(
-            ellipse 80% 60% at 70% 40%,
-            #eaf3ff 0%,
-            transparent 65%
-          ),
-          radial-gradient(
-            ellipse 50% 50% at 20% 80%,
-            #e1f5ee 0%,
-            transparent 60%
-          );
-      }
+    .nav-logo-text {
+      font-family: "Outfit", sans-serif;
+      font-weight: 700;
+      font-size: 1.1rem;
+      letter-spacing: -0.02em;
+    }
 
-      .hero-dots {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-image: radial-gradient(
-          circle,
+    .nav-logo-text span {
+      color: var(--purple);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover {
+      color: var(--navy);
+    }
+
+    .nav-cta {
+      background: var(--navy);
+      color: #fff;
+      padding: 0.55rem 1.25rem;
+      border-radius: var(--radius-pill);
+      font-size: 0.875rem;
+      font-weight: 500;
+      text-decoration: none;
+      transition:
+        background 0.2s,
+        transform 0.15s;
+      white-space: nowrap;
+    }
+
+    .nav-cta:hover {
+      background: var(--blue);
+      transform: translateY(-1px);
+    }
+
+    .nav-mobile-toggle {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 4px;
+    }
+
+    /* ─── HERO ─────────────────────────────────── */
+    .hero {
+      min-height: 100vh;
+      padding: 120px clamp(1.5rem, 5vw, 6rem) 80px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background:
+        radial-gradient(ellipse 80% 60% at 70% 40%,
+          #eaf3ff 0%,
+          transparent 65%),
+        radial-gradient(ellipse 50% 50% at 20% 80%,
+          #f0e8ff 0%,
+          transparent 60%);
+    }
+
+    .hero-dots {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: radial-gradient(circle,
           rgba(9, 30, 66, 0.06) 1px,
-          transparent 1px
-        );
-        background-size: 28px 28px;
-        pointer-events: none;
-        mask-image: radial-gradient(
-          ellipse 70% 80% at 50% 40%,
+          transparent 1px);
+      background-size: 28px 28px;
+      pointer-events: none;
+      mask-image: radial-gradient(ellipse 70% 80% at 50% 40%,
           black 0%,
-          transparent 80%
-        );
+          transparent 80%);
+    }
+
+    .hero-content {
+      position: relative;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--blue-light);
+      color: var(--blue);
+      border: 1px solid rgba(43, 127, 232, 0.2);
+      border-radius: var(--radius-pill);
+      padding: 0.35rem 1rem 0.35rem 0.5rem;
+      font-size: 0.8rem;
+      font-weight: 500;
+      margin-bottom: 1.5rem;
+      opacity: 0;
+      animation: fadeUp 0.6s 0.1s ease forwards;
+    }
+
+    .hero-badge-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--blue-mid);
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+
+      0%,
+      100% {
+        opacity: 1;
+        transform: scale(1);
       }
 
-      .hero-content {
-        position: relative;
+      50% {
+        opacity: 0.5;
+        transform: scale(1.4);
+      }
+    }
+
+    .hero h1 {
+      font-family: "Outfit", sans-serif;
+      font-size: clamp(2.4rem, 4.5vw, 3.8rem);
+      font-weight: 800;
+      line-height: 1.08;
+      letter-spacing: -0.03em;
+      color: var(--navy);
+      margin-bottom: 1.25rem;
+      opacity: 0;
+      animation: fadeUp 0.6s 0.2s ease forwards;
+    }
+
+    .hero h1 em {
+      font-style: normal;
+      background: linear-gradient(120deg, var(--blue-mid), var(--purple-light));
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-sub {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      color: var(--muted);
+      font-weight: 400;
+      max-width: 480px;
+      margin-bottom: 2rem;
+      opacity: 0;
+      animation: fadeUp 0.6s 0.3s ease forwards;
+    }
+
+    .hero-actions {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      opacity: 0;
+      animation: fadeUp 0.6s 0.4s ease forwards;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--navy);
+      color: #fff;
+      padding: 0.9rem 1.75rem;
+      border-radius: var(--radius-pill);
+      font-size: 0.95rem;
+      font-weight: 500;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      transition:
+        background 0.2s,
+        transform 0.15s,
+        box-shadow 0.2s;
+      box-shadow: 0 4px 20px rgba(9, 30, 66, 0.2);
+    }
+
+    .btn-primary:hover {
+      background: var(--blue);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(43, 127, 232, 0.3);
+    }
+
+    .btn-primary svg {
+      width: 18px;
+      height: 18px;
+    }
+
+    .btn-ghost {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--navy);
+      background: transparent;
+      padding: 0.9rem 1.5rem;
+      border-radius: var(--radius-pill);
+      font-size: 0.95rem;
+      font-weight: 500;
+      text-decoration: none;
+      border: 1.5px solid var(--border);
+      transition:
+        border-color 0.2s,
+        background 0.2s;
+    }
+
+    .btn-ghost:hover {
+      border-color: rgba(9, 30, 66, 0.25);
+      background: var(--off);
+    }
+
+    .hero-stats {
+      display: flex;
+      gap: 2rem;
+      margin-top: 3rem;
+      flex-wrap: wrap;
+      opacity: 0;
+      animation: fadeUp 0.6s 0.5s ease forwards;
+    }
+
+    .hero-stat-item {}
+
+    .hero-stat-num {
+      font-family: "Outfit", sans-serif;
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--navy);
+      line-height: 1;
+    }
+
+    .hero-stat-label {
+      font-size: 0.78rem;
+      color: var(--muted);
+      margin-top: 2px;
+    }
+
+    .hero-visual {
+      position: relative;
+      opacity: 0;
+      animation: fadeIn 0.8s 0.3s ease forwards;
+    }
+
+    .hero-mockup {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      box-shadow:
+        0 24px 80px rgba(9, 30, 66, 0.14),
+        0 0 0 1px var(--border);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .mockup-bar {
+      background: var(--off);
+      padding: 12px 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .mockup-dots {
+      display: flex;
+      gap: 6px;
+    }
+
+    .mockup-dots span {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+    }
+
+    .mockup-dots span:nth-child(1) {
+      background: #ff5f56;
+    }
+
+    .mockup-dots span:nth-child(2) {
+      background: #ffbd2e;
+    }
+
+    .mockup-dots span:nth-child(3) {
+      background: #27c93f;
+    }
+
+    .mockup-url {
+      flex: 1;
+      background: #fff;
+      border-radius: 6px;
+      padding: 5px 12px;
+      font-size: 0.72rem;
+      color: var(--muted);
+      border: 1px solid var(--border);
+      font-family: "DM Sans", monospace;
+    }
+
+    .mockup-hero-preview {
+      background: linear-gradient(135deg,
+          #0f2854 0%,
+          #2563EB 60%,
+          #7C3AED 100%);
+      padding: 2rem 1.75rem;
+      color: #fff;
+    }
+
+    .preview-tag {
+      font-size: 0.65rem;
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 20px;
+      padding: 3px 10px;
+      display: inline-block;
+      margin-bottom: 0.75rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .preview-h1 {
+      font-family: "Outfit", sans-serif;
+      font-size: 1.35rem;
+      font-weight: 800;
+      line-height: 1.15;
+      margin-bottom: 0.5rem;
+      letter-spacing: -0.02em;
+    }
+
+    .preview-sub {
+      font-size: 0.75rem;
+      opacity: 0.7;
+      margin-bottom: 1rem;
+      line-height: 1.5;
+    }
+
+    .preview-btn {
+      background: #25d366;
+      color: #fff;
+      padding: 8px 18px;
+      border-radius: 20px;
+      font-size: 0.72rem;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .preview-btn svg {
+      width: 12px;
+      height: 12px;
+    }
+
+    .mockup-content-strip {
+      padding: 1.25rem 1.75rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 0.75rem;
+    }
+
+    .mini-card {
+      background: var(--off);
+      border-radius: 10px;
+      padding: 0.75rem;
+      border: 1px solid var(--border);
+    }
+
+    .mini-card-icon {
+      width: 28px;
+      height: 28px;
+      border-radius: 8px;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .mini-card-title {
+      font-size: 0.65rem;
+      font-weight: 600;
+      color: var(--navy);
+      margin-bottom: 2px;
+    }
+
+    .mini-card-sub {
+      font-size: 0.58rem;
+      color: var(--muted);
+      line-height: 1.4;
+    }
+
+    .mockup-metrics {
+      padding: 0 1.75rem 1.25rem;
+      display: flex;
+      gap: 0.75rem;
+    }
+
+    .metric-pill {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: #f0e8ff;
+      color: #7C3AED;
+      border-radius: 20px;
+      padding: 5px 12px;
+      font-size: 0.65rem;
+      font-weight: 600;
+    }
+
+    .metric-pill.blue {
+      background: var(--blue-light);
+      color: var(--blue);
+    }
+
+    .floating-card {
+      position: absolute;
+      background: #fff;
+      border-radius: 12px;
+      padding: 0.75rem 1rem;
+      box-shadow: 0 8px 32px rgba(9, 30, 66, 0.12);
+      border: 1px solid var(--border);
+      font-size: 0.72rem;
+      min-width: 140px;
+      animation: float 4s ease-in-out infinite;
+    }
+
+    .floating-card:nth-child(2) {
+      animation-delay: -2s;
+    }
+
+    .float-card-1 {
+      top: 16%;
+      right: -8%;
+    }
+
+    .float-card-2 {
+      bottom: 18%;
+      left: -10%;
+      animation-delay: -1.5s;
+    }
+
+    @keyframes float {
+
+      0%,
+      100% {
+        transform: translateY(0);
       }
 
-      .hero-badge {
-        display: inline-flex;
-        align-items: center;
-        gap: 8px;
-        background: var(--blue-light);
-        color: var(--blue);
-        border: 1px solid rgba(43, 127, 232, 0.2);
-        border-radius: var(--radius-pill);
-        padding: 0.35rem 1rem 0.35rem 0.5rem;
-        font-size: 0.8rem;
-        font-weight: 500;
-        margin-bottom: 1.5rem;
+      50% {
+        transform: translateY(-8px);
+      }
+    }
+
+    .float-label {
+      color: var(--muted);
+      font-size: 0.62rem;
+      margin-bottom: 4px;
+    }
+
+    .float-value {
+      font-weight: 700;
+      font-size: 1rem;
+      font-family: "Outfit", sans-serif;
+      color: var(--navy);
+    }
+
+    .float-badge {
+      display: inline-block;
+      background: #e8f5e9;
+      color: #2e7d32;
+      border-radius: 20px;
+      padding: 1px 8px;
+      font-size: 0.6rem;
+      font-weight: 600;
+      margin-top: 2px;
+    }
+
+    .float-badge.teal {
+      background: #f0e8ff;
+      color: var(--purple);
+    }
+
+    /* ─── LOGOS / TRUST ────────────────────────── */
+    .trust-bar {
+      padding: 2.5rem clamp(1.5rem, 5vw, 6rem);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .trust-label {
+      text-align: center;
+      font-size: 0.78rem;
+      color: var(--muted);
+      margin-bottom: 1.5rem;
+      letter-spacing: 0.05em;
+    }
+
+    .trust-logos {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 3rem;
+      flex-wrap: wrap;
+    }
+
+    .trust-logo {
+      font-family: "Outfit", sans-serif;
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: rgba(9, 30, 66, 0.3);
+      letter-spacing: -0.02em;
+      transition: color 0.2s;
+    }
+
+    .trust-logo:hover {
+      color: rgba(9, 30, 66, 0.7);
+    }
+
+    /* ─── SECTIONS ─────────────────────────────── */
+    .section {
+      padding: 100px clamp(1.5rem, 5vw, 6rem);
+    }
+
+    .section-alt {
+      background: var(--off);
+    }
+
+    .section-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--blue-mid);
+      margin-bottom: 1rem;
+    }
+
+    .section-label::before {
+      content: "";
+      width: 20px;
+      height: 2px;
+      background: var(--blue-mid);
+      border-radius: 1px;
+    }
+
+    .section-title {
+      font-family: "Outfit", sans-serif;
+      font-size: clamp(1.9rem, 3.5vw, 3rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      color: var(--navy);
+      line-height: 1.1;
+      max-width: 640px;
+    }
+
+    .section-title em {
+      font-style: normal;
+      background: linear-gradient(120deg, var(--blue-mid), var(--purple-light));
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .section-sub {
+      font-size: 1.05rem;
+      color: var(--muted);
+      line-height: 1.7;
+      max-width: 520px;
+      margin-top: 0.75rem;
+    }
+
+    /* ─── PROBLEMAS ───────────────────────────── */
+    .problems-grid {
+      margin-top: 3.5rem;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+
+    .problem-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      padding: 1.75rem;
+      transition:
+        transform 0.2s,
+        box-shadow 0.2s;
+      cursor: default;
+    }
+
+    .problem-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 48px rgba(9, 30, 66, 0.08);
+    }
+
+    .problem-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.25rem;
+      font-size: 1.25rem;
+    }
+
+    .problem-icon.red {
+      background: #fff0f0;
+    }
+
+    .problem-icon.amber {
+      background: #fff8e1;
+    }
+
+    .problem-icon.purple {
+      background: #f3efff;
+    }
+
+    .problem-card h3 {
+      font-family: "Outfit", sans-serif;
+      font-weight: 700;
+      font-size: 1.05rem;
+      color: var(--navy);
+      margin-bottom: 0.5rem;
+      letter-spacing: -0.01em;
+    }
+
+    .problem-card p {
+      font-size: 0.875rem;
+      color: var(--muted);
+      line-height: 1.65;
+    }
+
+    .problem-arrow {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      margin: 2.5rem 0;
+    }
+
+    .problem-arrow-line {
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(90deg,
+          transparent,
+          var(--border),
+          transparent);
+    }
+
+    .problem-arrow-badge {
+      background: var(--navy);
+      color: #fff;
+      border-radius: var(--radius-pill);
+      padding: 0.5rem 1.25rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    /* ─── COMO FUNCIONA ───────────────────────── */
+    .process-layout {
+      margin-top: 4rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: start;
+    }
+
+    .process-steps {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .process-step {
+      display: flex;
+      gap: 1.5rem;
+      padding: 1.5rem 0;
+      border-bottom: 1px solid var(--border);
+      cursor: pointer;
+      transition: opacity 0.2s;
+    }
+
+    .process-step:last-child {
+      border-bottom: none;
+    }
+
+    .process-step.active .step-num {
+      background: var(--navy);
+      color: #fff;
+    }
+
+    .process-step.active .step-title {
+      color: var(--navy);
+    }
+
+    .step-num {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: "Outfit", sans-serif;
+      font-weight: 700;
+      font-size: 0.85rem;
+      background: var(--off);
+      color: var(--muted);
+      border: 1px solid var(--border);
+      transition:
+        background 0.2s,
+        color 0.2s;
+    }
+
+    .step-content {
+      flex: 1;
+    }
+
+    .step-title {
+      font-family: "Outfit", sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--muted);
+      margin-bottom: 0.35rem;
+      letter-spacing: -0.01em;
+      transition: color 0.2s;
+    }
+
+    .step-desc {
+      font-size: 0.875rem;
+      color: var(--muted);
+      line-height: 1.65;
+      display: none;
+    }
+
+    .process-step.active .step-desc {
+      display: block;
+      color: var(--muted);
+    }
+
+    .process-visual-pane {
+      position: sticky;
+      top: 100px;
+      background: var(--navy);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      min-height: 400px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .pane-header {
+      padding: 1.25rem 1.5rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .pane-step-badge {
+      background: rgba(255, 255, 255, 0.1);
+      color: rgba(255, 255, 255, 0.6);
+      border-radius: 20px;
+      padding: 3px 10px;
+      font-size: 0.68rem;
+      font-weight: 600;
+    }
+
+    .pane-step-title {
+      color: #fff;
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+
+    .pane-body {
+      flex: 1;
+      padding: 2rem 1.5rem;
+    }
+
+    .pane-card {
+      display: none;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .pane-card.active {
+      display: flex;
+    }
+
+    .pane-row {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      padding: 1rem 1.25rem;
+    }
+
+    .pane-row-label {
+      font-size: 0.65rem;
+      letter-spacing: 0.08em;
+      color: rgba(255, 255, 255, 0.4);
+      margin-bottom: 4px;
+      text-transform: uppercase;
+    }
+
+    .pane-row-value {
+      color: #fff;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+
+    .pane-row-sub {
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 0.78rem;
+      margin-top: 2px;
+    }
+
+    .pane-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      background: rgba(124, 58, 237, 0.2);
+      color: #C084FC;
+      border-radius: 20px;
+      padding: 4px 12px;
+      font-size: 0.72rem;
+      font-weight: 600;
+    }
+
+    /* ─── PACOTES ─────────────────────────────── */
+    .packages-grid {
+      margin-top: 4rem;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      align-items: start;
+    }
+
+    .package-card {
+      border-radius: var(--radius-lg);
+      border: 1.5px solid var(--border);
+      overflow: hidden;
+      background: var(--white);
+      transition:
+        transform 0.2s,
+        box-shadow 0.2s;
+    }
+
+    .package-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 60px rgba(9, 30, 66, 0.1);
+    }
+
+    .package-card.featured {
+      border-color: var(--blue-mid);
+      position: relative;
+    }
+
+    .package-badge {
+      background: var(--blue-mid);
+      color: #fff;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-align: center;
+      padding: 6px;
+      text-transform: uppercase;
+    }
+
+    .package-body {
+      padding: 1.75rem;
+    }
+
+    .package-name {
+      font-family: "Outfit", sans-serif;
+      font-weight: 700;
+      font-size: 0.8rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 0.25rem;
+    }
+
+    .package-title {
+      font-family: "Outfit", sans-serif;
+      font-weight: 800;
+      font-size: 1.5rem;
+      color: var(--navy);
+      margin-bottom: 0.5rem;
+      letter-spacing: -0.02em;
+    }
+
+    .package-price {
+      display: flex;
+      align-items: baseline;
+      gap: 4px;
+      margin-bottom: 0.25rem;
+    }
+
+    .package-price-main {
+      font-family: "Outfit", sans-serif;
+      font-weight: 800;
+      font-size: 2.25rem;
+      color: var(--navy);
+      letter-spacing: -0.03em;
+    }
+
+    .package-price-sub {
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    .package-installment {
+      font-size: 0.78rem;
+      color: var(--muted);
+      margin-bottom: 1.5rem;
+    }
+
+    .package-divider {
+      height: 1px;
+      background: var(--border);
+      margin: 1.5rem 0;
+    }
+
+    .package-features {
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
+      margin-bottom: 1.75rem;
+    }
+
+    .package-feature {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      font-size: 0.875rem;
+      color: var(--muted);
+    }
+
+    .feature-check {
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: #f0e8ff;
+      color: #7C3AED;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 1px;
+      font-size: 0.6rem;
+    }
+
+    .package-cta {
+      display: block;
+      text-align: center;
+      background: var(--off);
+      color: var(--navy);
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius-pill);
+      padding: 0.8rem;
+      font-weight: 600;
+      font-size: 0.875rem;
+      text-decoration: none;
+      transition:
+        background 0.2s,
+        border-color 0.2s;
+    }
+
+    .package-cta:hover {
+      background: var(--navy);
+      color: #fff;
+      border-color: var(--navy);
+    }
+
+    .package-card.featured .package-cta {
+      background: var(--blue-mid);
+      color: #fff;
+      border-color: var(--blue-mid);
+    }
+
+    .package-card.featured .package-cta:hover {
+      background: var(--blue);
+      border-color: var(--blue);
+    }
+
+    .care-banner {
+      margin-top: 1.5rem;
+      background: var(--off);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.5rem 2rem;
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .care-text {
+      flex: 1;
+    }
+
+    .care-text h4 {
+      font-family: "Outfit", sans-serif;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 0.25rem;
+    }
+
+    .care-text p {
+      font-size: 0.875rem;
+      color: var(--muted);
+    }
+
+    .care-banner .btn-primary {
+      flex-shrink: 0;
+    }
+
+    /* ─── DEPOIMENTOS ────────────────────────── */
+    .testimonials-grid {
+      margin-top: 3.5rem;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.25rem;
+    }
+
+    .testimonial-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      transition:
+        transform 0.2s,
+        box-shadow 0.2s;
+    }
+
+    .testimonial-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 40px rgba(9, 30, 66, 0.08);
+    }
+
+    .testimonial-card:first-child {
+      grid-row: span 1;
+    }
+
+    .testimonial-stars {
+      display: flex;
+      gap: 2px;
+      margin-bottom: 0.75rem;
+      color: #ffb400;
+      font-size: 0.8rem;
+    }
+
+    .testimonial-text {
+      font-size: 0.9rem;
+      color: var(--navy);
+      line-height: 1.65;
+      margin-bottom: 1.25rem;
+      font-style: italic;
+    }
+
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .author-avatar {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: "Outfit", sans-serif;
+      font-weight: 700;
+      font-size: 0.8rem;
+      flex-shrink: 0;
+    }
+
+    .author-name {
+      font-weight: 600;
+      font-size: 0.875rem;
+      color: var(--navy);
+    }
+
+    .author-role {
+      font-size: 0.75rem;
+      color: var(--muted);
+    }
+
+    /* ─── DIFERENCIAIS ───────────────────────── */
+    .diff-layout {
+      margin-top: 4rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .diff-items {
+      display: flex;
+      flex-direction: column;
+      gap: 1.75rem;
+    }
+
+    .diff-item {
+      display: flex;
+      gap: 1.25rem;
+    }
+
+    .diff-icon-wrap {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-size: 1.15rem;
+    }
+
+    .diff-icon-wrap.navy {
+      background: var(--navy);
+      color: #fff;
+    }
+
+    .diff-icon-wrap.blue {
+      background: var(--blue-light);
+    }
+
+    .diff-icon-wrap.teal {
+      background: #f0e8ff;
+    }
+
+    .diff-icon-wrap.amber {
+      background: #fff8e1;
+    }
+
+    .diff-item h4 {
+      font-family: "Outfit", sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--navy);
+      margin-bottom: 0.25rem;
+    }
+
+    .diff-item p {
+      font-size: 0.875rem;
+      color: var(--muted);
+      line-height: 1.65;
+    }
+
+    .diff-visual {
+      background: linear-gradient(135deg,
+          var(--navy) 0%,
+          #2563EB 50%,
+          #7C3AED 100%);
+      border-radius: var(--radius-lg);
+      padding: 2rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .diff-visual-bg {
+      position: absolute;
+      top: -40%;
+      right: -20%;
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.04);
+    }
+
+    .diff-score-card {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 12px;
+      padding: 1.25rem;
+      margin-bottom: 0.75rem;
+      position: relative;
+    }
+
+    .diff-score-label {
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 0.72rem;
+      margin-bottom: 0.5rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .diff-score-val {
+      font-family: "Outfit", sans-serif;
+      font-weight: 800;
+      font-size: 2.5rem;
+      color: #fff;
+      line-height: 1;
+    }
+
+    .diff-score-badge {
+      position: absolute;
+      top: 1.25rem;
+      right: 1.25rem;
+      background: #27c93f;
+      color: #fff;
+      border-radius: 20px;
+      padding: 3px 10px;
+      font-size: 0.68rem;
+      font-weight: 700;
+    }
+
+    .diff-bar-wrap {
+      margin-top: 0.75rem;
+    }
+
+    .diff-bar-label {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.7rem;
+      color: rgba(255, 255, 255, 0.5);
+      margin-bottom: 5px;
+    }
+
+    .diff-bar-track {
+      height: 6px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 3px;
+      overflow: hidden;
+    }
+
+    .diff-bar-fill {
+      height: 100%;
+      border-radius: 3px;
+      background: linear-gradient(90deg, #4A7BFF, #7C3AED);
+    }
+
+    .diff-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 1rem;
+    }
+
+    .diff-tag {
+      background: rgba(255, 255, 255, 0.1);
+      color: rgba(255, 255, 255, 0.7);
+      border-radius: 20px;
+      padding: 4px 12px;
+      font-size: 0.7rem;
+      font-weight: 500;
+    }
+
+    /* ─── CTA ──────────────────────────────────── */
+    .cta-section {
+      padding: 100px clamp(1.5rem, 5vw, 6rem);
+      background: var(--navy);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-bg {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background:
+        radial-gradient(ellipse 60% 80% at 80% 50%,
+          rgba(43, 127, 232, 0.15) 0%,
+          transparent 60%),
+        radial-gradient(ellipse 50% 50% at 20% 60%,
+          rgba(124, 58, 237, 0.1) 0%,
+          transparent 50%);
+    }
+
+    .cta-content {
+      position: relative;
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    .cta-content .section-label {
+      color: #C084FC;
+      justify-content: center;
+    }
+
+    .cta-content .section-label::before {
+      background: #C084FC;
+    }
+
+    .cta-title {
+      font-family: "Outfit", sans-serif;
+      font-weight: 800;
+      font-size: clamp(2rem, 4vw, 3.25rem);
+      letter-spacing: -0.03em;
+      color: #fff;
+      line-height: 1.1;
+      margin: 0.75rem 0 1rem;
+    }
+
+    .cta-sub {
+      color: rgba(255, 255, 255, 0.55);
+      font-size: 1rem;
+      line-height: 1.7;
+      margin-bottom: 2rem;
+    }
+
+    .cta-actions {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .btn-white {
+      background: #fff;
+      color: var(--navy);
+      padding: 0.9rem 1.75rem;
+      border-radius: var(--radius-pill);
+      font-weight: 600;
+      font-size: 0.95rem;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition:
+        transform 0.15s,
+        box-shadow 0.2s;
+    }
+
+    .btn-white:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn-outline-white {
+      background: transparent;
+      color: rgba(255, 255, 255, 0.8);
+      border: 1.5px solid rgba(255, 255, 255, 0.25);
+      padding: 0.9rem 1.5rem;
+      border-radius: var(--radius-pill);
+      font-weight: 500;
+      font-size: 0.95rem;
+      text-decoration: none;
+      transition:
+        border-color 0.2s,
+        background 0.2s;
+    }
+
+    .btn-outline-white:hover {
+      border-color: rgba(255, 255, 255, 0.5);
+      background: rgba(255, 255, 255, 0.06);
+    }
+
+    .cta-title em {
+      font-style: normal;
+      color: #C084FC;
+    }
+
+    .cta-note {
+      margin-top: 1.25rem;
+      font-size: 0.78rem;
+      color: rgba(255, 255, 255, 0.35);
+    }
+
+    /* ─── FAQ ──────────────────────────────────── */
+    .faq-layout {
+      margin-top: 4rem;
+      max-width: 720px;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid var(--border);
+    }
+
+    .faq-trigger {
+      width: 100%;
+      background: none;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.25rem 0;
+      font-family: "DM Sans", sans-serif;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--navy);
+      text-align: left;
+      gap: 1rem;
+    }
+
+    .faq-icon {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: var(--off);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-size: 0.8rem;
+      color: var(--muted);
+      transition:
+        transform 0.3s,
+        background 0.2s;
+    }
+
+    .faq-item.open .faq-icon {
+      transform: rotate(45deg);
+      background: var(--navy);
+      color: #fff;
+    }
+
+    .faq-body {
+      display: none;
+      padding-bottom: 1.25rem;
+    }
+
+    .faq-body p {
+      font-size: 0.875rem;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    .faq-item.open .faq-body {
+      display: block;
+    }
+
+    /* ─── FOOTER ───────────────────────────────── */
+    footer {
+      background: var(--off);
+      border-top: 1px solid var(--border);
+      padding: 3rem clamp(1.5rem, 5vw, 6rem);
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+
+    .footer-brand {
+      max-width: 260px;
+    }
+
+    .footer-brand-name {
+      font-family: "Outfit", sans-serif;
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: var(--navy);
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-brand p {
+      font-size: 0.8rem;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    .footer-col h5 {
+      font-family: "Outfit", sans-serif;
+      font-weight: 700;
+      font-size: 0.8rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 1rem;
+    }
+
+    .footer-col ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .footer-col ul a {
+      font-size: 0.875rem;
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .footer-col ul a:hover {
+      color: var(--navy);
+    }
+
+    .footer-bottom {
+      margin-top: 2.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .footer-bottom p {
+      font-size: 0.75rem;
+      color: var(--muted);
+    }
+
+    /* ─── WHATSAPP FLOAT ───────────────────────── */
+    .wa-float {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      z-index: 200;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: #25d366;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 8px 32px rgba(37, 211, 102, 0.4);
+      cursor: pointer;
+      text-decoration: none;
+      transition:
+        transform 0.2s,
+        box-shadow 0.2s;
+      animation: fadeUp 0.5s 1s ease both;
+    }
+
+    .wa-float:hover {
+      transform: scale(1.08);
+      box-shadow: 0 12px 40px rgba(37, 211, 102, 0.5);
+    }
+
+    .wa-float svg {
+      width: 28px;
+      height: 28px;
+      fill: #fff;
+    }
+
+    .wa-pulse {
+      position: absolute;
+      inset: -4px;
+      border-radius: 50%;
+      background: rgba(37, 211, 102, 0.3);
+      animation: waPulse 2.5s infinite;
+    }
+
+    @keyframes waPulse {
+      0% {
+        transform: scale(1);
+        opacity: 0.8;
+      }
+
+      100% {
+        transform: scale(1.5);
         opacity: 0;
-        animation: fadeUp 0.6s 0.1s ease forwards;
       }
-      .hero-badge-dot {
-        width: 6px;
-        height: 6px;
-        border-radius: 50%;
-        background: var(--blue-mid);
-        animation: pulse 2s infinite;
-      }
-      @keyframes pulse {
-        0%,
-        100% {
-          opacity: 1;
-          transform: scale(1);
-        }
-        50% {
-          opacity: 0.5;
-          transform: scale(1.4);
-        }
-      }
+    }
 
-      .hero h1 {
-        font-family: "Outfit", sans-serif;
-        font-size: clamp(2.4rem, 4.5vw, 3.8rem);
-        font-weight: 800;
-        line-height: 1.08;
-        letter-spacing: -0.03em;
-        color: var(--navy);
-        margin-bottom: 1.25rem;
+    /* ─── ANIMATIONS ───────────────────────────── */
+    @keyframes fadeUp {
+      from {
         opacity: 0;
-        animation: fadeUp 0.6s 0.2s ease forwards;
-      }
-      .hero h1 em {
-        font-style: normal;
-        background: linear-gradient(120deg, var(--blue-mid), var(--teal-light));
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
+        transform: translateY(24px);
       }
 
-      .hero-sub {
-        font-size: 1.1rem;
-        line-height: 1.7;
-        color: var(--muted);
-        font-weight: 400;
-        max-width: 480px;
-        margin-bottom: 2rem;
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
         opacity: 0;
-        animation: fadeUp 0.6s 0.3s ease forwards;
       }
 
-      .hero-actions {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-        flex-wrap: wrap;
-        opacity: 0;
-        animation: fadeUp 0.6s 0.4s ease forwards;
+      to {
+        opacity: 1;
       }
+    }
 
-      .btn-primary {
-        display: inline-flex;
-        align-items: center;
-        gap: 8px;
-        background: var(--navy);
-        color: #fff;
-        padding: 0.9rem 1.75rem;
-        border-radius: var(--radius-pill);
-        font-size: 0.95rem;
-        font-weight: 500;
-        text-decoration: none;
-        border: none;
-        cursor: pointer;
-        transition:
-          background 0.2s,
-          transform 0.15s,
-          box-shadow 0.2s;
-        box-shadow: 0 4px 20px rgba(9, 30, 66, 0.2);
-      }
-      .btn-primary:hover {
-        background: var(--blue);
-        transform: translateY(-2px);
-        box-shadow: 0 8px 30px rgba(43, 127, 232, 0.3);
-      }
-      .btn-primary svg {
-        width: 18px;
-        height: 18px;
-      }
+    .reveal {
+      opacity: 0;
+      transform: translateY(32px);
+      transition:
+        opacity 0.7s ease,
+        transform 0.7s ease;
+    }
 
-      .btn-ghost {
-        display: inline-flex;
-        align-items: center;
-        gap: 8px;
-        color: var(--navy);
-        background: transparent;
-        padding: 0.9rem 1.5rem;
-        border-radius: var(--radius-pill);
-        font-size: 0.95rem;
-        font-weight: 500;
-        text-decoration: none;
-        border: 1.5px solid var(--border);
-        transition:
-          border-color 0.2s,
-          background 0.2s;
-      }
-      .btn-ghost:hover {
-        border-color: rgba(9, 30, 66, 0.25);
-        background: var(--off);
-      }
+    .reveal.visible {
+      opacity: 1;
+      transform: none;
+    }
 
-      .hero-stats {
-        display: flex;
-        gap: 2rem;
-        margin-top: 3rem;
-        flex-wrap: wrap;
-        opacity: 0;
-        animation: fadeUp 0.6s 0.5s ease forwards;
-      }
-      .hero-stat-item {
-      }
-      .hero-stat-num {
-        font-family: "Outfit", sans-serif;
-        font-size: 1.6rem;
-        font-weight: 700;
-        color: var(--navy);
-        line-height: 1;
-      }
-      .hero-stat-label {
-        font-size: 0.78rem;
-        color: var(--muted);
-        margin-top: 2px;
+    .reveal-delay-1 {
+      transition-delay: 0.1s;
+    }
+
+    .reveal-delay-2 {
+      transition-delay: 0.2s;
+    }
+
+    .reveal-delay-3 {
+      transition-delay: 0.3s;
+    }
+
+    /* ─── MOBILE ───────────────────────────────── */
+    @media (max-width: 900px) {
+      .hero {
+        grid-template-columns: 1fr;
+        min-height: auto;
+        gap: 3rem;
+        padding-top: 100px;
       }
 
       .hero-visual {
-        position: relative;
-        opacity: 0;
-        animation: fadeIn 0.8s 0.3s ease forwards;
-      }
-
-      .hero-mockup {
-        background: var(--white);
-        border-radius: var(--radius-lg);
-        box-shadow:
-          0 24px 80px rgba(9, 30, 66, 0.14),
-          0 0 0 1px var(--border);
-        overflow: hidden;
-        position: relative;
-      }
-
-      .mockup-bar {
-        background: var(--off);
-        padding: 12px 16px;
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        border-bottom: 1px solid var(--border);
-      }
-      .mockup-dots {
-        display: flex;
-        gap: 6px;
-      }
-      .mockup-dots span {
-        width: 10px;
-        height: 10px;
-        border-radius: 50%;
-      }
-      .mockup-dots span:nth-child(1) {
-        background: #ff5f56;
-      }
-      .mockup-dots span:nth-child(2) {
-        background: #ffbd2e;
-      }
-      .mockup-dots span:nth-child(3) {
-        background: #27c93f;
-      }
-      .mockup-url {
-        flex: 1;
-        background: #fff;
-        border-radius: 6px;
-        padding: 5px 12px;
-        font-size: 0.72rem;
-        color: var(--muted);
-        border: 1px solid var(--border);
-        font-family: "DM Sans", monospace;
-      }
-
-      .mockup-hero-preview {
-        background: linear-gradient(
-          135deg,
-          #0f2854 0%,
-          #1560bd 60%,
-          #0f6e56 100%
-        );
-        padding: 2rem 1.75rem;
-        color: #fff;
-      }
-      .preview-tag {
-        font-size: 0.65rem;
-        background: rgba(255, 255, 255, 0.15);
-        border-radius: 20px;
-        padding: 3px 10px;
-        display: inline-block;
-        margin-bottom: 0.75rem;
-        letter-spacing: 0.08em;
-        text-transform: uppercase;
-      }
-      .preview-h1 {
-        font-family: "Outfit", sans-serif;
-        font-size: 1.35rem;
-        font-weight: 800;
-        line-height: 1.15;
-        margin-bottom: 0.5rem;
-        letter-spacing: -0.02em;
-      }
-      .preview-sub {
-        font-size: 0.75rem;
-        opacity: 0.7;
-        margin-bottom: 1rem;
-        line-height: 1.5;
-      }
-      .preview-btn {
-        background: #25d366;
-        color: #fff;
-        padding: 8px 18px;
-        border-radius: 20px;
-        font-size: 0.72rem;
-        font-weight: 600;
-        display: inline-flex;
-        align-items: center;
-        gap: 6px;
-      }
-      .preview-btn svg {
-        width: 12px;
-        height: 12px;
-      }
-
-      .mockup-content-strip {
-        padding: 1.25rem 1.75rem;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 0.75rem;
-      }
-      .mini-card {
-        background: var(--off);
-        border-radius: 10px;
-        padding: 0.75rem;
-        border: 1px solid var(--border);
-      }
-      .mini-card-icon {
-        width: 28px;
-        height: 28px;
-        border-radius: 8px;
-        margin-bottom: 0.5rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      .mini-card-title {
-        font-size: 0.65rem;
-        font-weight: 600;
-        color: var(--navy);
-        margin-bottom: 2px;
-      }
-      .mini-card-sub {
-        font-size: 0.58rem;
-        color: var(--muted);
-        line-height: 1.4;
-      }
-
-      .mockup-metrics {
-        padding: 0 1.75rem 1.25rem;
-        display: flex;
-        gap: 0.75rem;
-      }
-      .metric-pill {
-        display: flex;
-        align-items: center;
-        gap: 6px;
-        background: #e8f5e9;
-        color: #2e7d32;
-        border-radius: 20px;
-        padding: 5px 12px;
-        font-size: 0.65rem;
-        font-weight: 600;
-      }
-      .metric-pill.blue {
-        background: var(--blue-light);
-        color: var(--blue);
-      }
-
-      .floating-card {
-        position: absolute;
-        background: #fff;
-        border-radius: 12px;
-        padding: 0.75rem 1rem;
-        box-shadow: 0 8px 32px rgba(9, 30, 66, 0.12);
-        border: 1px solid var(--border);
-        font-size: 0.72rem;
-        min-width: 140px;
-        animation: float 4s ease-in-out infinite;
-      }
-      .floating-card:nth-child(2) {
-        animation-delay: -2s;
+        order: -1;
       }
 
       .float-card-1 {
-        top: 16%;
-        right: -8%;
+        right: -4%;
       }
+
       .float-card-2 {
-        bottom: 18%;
-        left: -10%;
-        animation-delay: -1.5s;
-      }
-      @keyframes float {
-        0%,
-        100% {
-          transform: translateY(0);
-        }
-        50% {
-          transform: translateY(-8px);
-        }
-      }
-      .float-label {
-        color: var(--muted);
-        font-size: 0.62rem;
-        margin-bottom: 4px;
-      }
-      .float-value {
-        font-weight: 700;
-        font-size: 1rem;
-        font-family: "Outfit", sans-serif;
-        color: var(--navy);
-      }
-      .float-badge {
-        display: inline-block;
-        background: #e8f5e9;
-        color: #2e7d32;
-        border-radius: 20px;
-        padding: 1px 8px;
-        font-size: 0.6rem;
-        font-weight: 600;
-        margin-top: 2px;
-      }
-      .float-badge.teal {
-        background: #e1f5ee;
-        color: var(--teal);
+        left: -4%;
       }
 
-      /* ─── LOGOS / TRUST ────────────────────────── */
-      .trust-bar {
-        padding: 2.5rem clamp(1.5rem, 5vw, 6rem);
-        border-top: 1px solid var(--border);
-        border-bottom: 1px solid var(--border);
-      }
-      .trust-label {
-        text-align: center;
-        font-size: 0.78rem;
-        color: var(--muted);
-        margin-bottom: 1.5rem;
-        letter-spacing: 0.05em;
-      }
-      .trust-logos {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 3rem;
-        flex-wrap: wrap;
-      }
-      .trust-logo {
-        font-family: "Outfit", sans-serif;
-        font-weight: 700;
-        font-size: 0.95rem;
-        color: rgba(9, 30, 66, 0.3);
-        letter-spacing: -0.02em;
-        transition: color 0.2s;
-      }
-      .trust-logo:hover {
-        color: rgba(9, 30, 66, 0.7);
-      }
-
-      /* ─── SECTIONS ─────────────────────────────── */
-      .section {
-        padding: 100px clamp(1.5rem, 5vw, 6rem);
-      }
-      .section-alt {
-        background: var(--off);
-      }
-
-      .section-label {
-        display: inline-flex;
-        align-items: center;
-        gap: 8px;
-        font-size: 0.75rem;
-        font-weight: 600;
-        letter-spacing: 0.1em;
-        text-transform: uppercase;
-        color: var(--blue-mid);
-        margin-bottom: 1rem;
-      }
-      .section-label::before {
-        content: "";
-        width: 20px;
-        height: 2px;
-        background: var(--blue-mid);
-        border-radius: 1px;
-      }
-
-      .section-title {
-        font-family: "Outfit", sans-serif;
-        font-size: clamp(1.9rem, 3.5vw, 3rem);
-        font-weight: 800;
-        letter-spacing: -0.03em;
-        color: var(--navy);
-        line-height: 1.1;
-        max-width: 640px;
-      }
-      .section-title em {
-        font-style: normal;
-        background: linear-gradient(120deg, var(--blue-mid), var(--teal-light));
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-      }
-
-      .section-sub {
-        font-size: 1.05rem;
-        color: var(--muted);
-        line-height: 1.7;
-        max-width: 520px;
-        margin-top: 0.75rem;
-      }
-
-      /* ─── PROBLEMAS ───────────────────────────── */
       .problems-grid {
-        margin-top: 3.5rem;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1.5rem;
-      }
-      .problem-card {
-        background: var(--white);
-        border-radius: var(--radius);
-        border: 1px solid var(--border);
-        padding: 1.75rem;
-        transition:
-          transform 0.2s,
-          box-shadow 0.2s;
-        cursor: default;
-      }
-      .problem-card:hover {
-        transform: translateY(-4px);
-        box-shadow: 0 16px 48px rgba(9, 30, 66, 0.08);
-      }
-      .problem-icon {
-        width: 44px;
-        height: 44px;
-        border-radius: 12px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 1.25rem;
-        font-size: 1.25rem;
-      }
-      .problem-icon.red {
-        background: #fff0f0;
-      }
-      .problem-icon.amber {
-        background: #fff8e1;
-      }
-      .problem-icon.purple {
-        background: #f3efff;
-      }
-      .problem-card h3 {
-        font-family: "Outfit", sans-serif;
-        font-weight: 700;
-        font-size: 1.05rem;
-        color: var(--navy);
-        margin-bottom: 0.5rem;
-        letter-spacing: -0.01em;
-      }
-      .problem-card p {
-        font-size: 0.875rem;
-        color: var(--muted);
-        line-height: 1.65;
-      }
-      .problem-arrow {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 1rem;
-        margin: 2.5rem 0;
-      }
-      .problem-arrow-line {
-        flex: 1;
-        height: 1px;
-        background: linear-gradient(
-          90deg,
-          transparent,
-          var(--border),
-          transparent
-        );
-      }
-      .problem-arrow-badge {
-        background: var(--navy);
-        color: #fff;
-        border-radius: var(--radius-pill);
-        padding: 0.5rem 1.25rem;
-        font-size: 0.8rem;
-        font-weight: 600;
-        white-space: nowrap;
+        grid-template-columns: 1fr;
       }
 
-      /* ─── COMO FUNCIONA ───────────────────────── */
       .process-layout {
-        margin-top: 4rem;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 5rem;
-        align-items: start;
-      }
-      .process-steps {
-        display: flex;
-        flex-direction: column;
-        gap: 0;
-      }
-
-      .process-step {
-        display: flex;
-        gap: 1.5rem;
-        padding: 1.5rem 0;
-        border-bottom: 1px solid var(--border);
-        cursor: pointer;
-        transition: opacity 0.2s;
-      }
-      .process-step:last-child {
-        border-bottom: none;
-      }
-      .process-step.active .step-num {
-        background: var(--navy);
-        color: #fff;
-      }
-      .process-step.active .step-title {
-        color: var(--navy);
-      }
-
-      .step-num {
-        width: 36px;
-        height: 36px;
-        border-radius: 50%;
-        flex-shrink: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: "Outfit", sans-serif;
-        font-weight: 700;
-        font-size: 0.85rem;
-        background: var(--off);
-        color: var(--muted);
-        border: 1px solid var(--border);
-        transition:
-          background 0.2s,
-          color 0.2s;
-      }
-      .step-content {
-        flex: 1;
-      }
-      .step-title {
-        font-family: "Outfit", sans-serif;
-        font-weight: 700;
-        font-size: 1rem;
-        color: var(--muted);
-        margin-bottom: 0.35rem;
-        letter-spacing: -0.01em;
-        transition: color 0.2s;
-      }
-      .step-desc {
-        font-size: 0.875rem;
-        color: var(--muted);
-        line-height: 1.65;
-        display: none;
-      }
-      .process-step.active .step-desc {
-        display: block;
-        color: var(--muted);
+        grid-template-columns: 1fr;
       }
 
       .process-visual-pane {
-        position: sticky;
-        top: 100px;
-        background: var(--navy);
-        border-radius: var(--radius-lg);
-        overflow: hidden;
-        min-height: 400px;
-        display: flex;
-        flex-direction: column;
+        position: static;
+        margin-top: 2rem;
       }
 
-      .pane-header {
-        padding: 1.25rem 1.5rem;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-        display: flex;
-        align-items: center;
-        gap: 0.75rem;
-      }
-      .pane-step-badge {
-        background: rgba(255, 255, 255, 0.1);
-        color: rgba(255, 255, 255, 0.6);
-        border-radius: 20px;
-        padding: 3px 10px;
-        font-size: 0.68rem;
-        font-weight: 600;
-      }
-      .pane-step-title {
-        color: #fff;
-        font-weight: 600;
-        font-size: 0.9rem;
-      }
-
-      .pane-body {
-        flex: 1;
-        padding: 2rem 1.5rem;
-      }
-
-      .pane-card {
-        display: none;
-        flex-direction: column;
-        gap: 1rem;
-      }
-      .pane-card.active {
-        display: flex;
-      }
-
-      .pane-row {
-        background: rgba(255, 255, 255, 0.05);
-        border: 1px solid rgba(255, 255, 255, 0.08);
-        border-radius: 12px;
-        padding: 1rem 1.25rem;
-      }
-      .pane-row-label {
-        font-size: 0.65rem;
-        letter-spacing: 0.08em;
-        color: rgba(255, 255, 255, 0.4);
-        margin-bottom: 4px;
-        text-transform: uppercase;
-      }
-      .pane-row-value {
-        color: #fff;
-        font-size: 0.9rem;
-        font-weight: 500;
-      }
-      .pane-row-sub {
-        color: rgba(255, 255, 255, 0.5);
-        font-size: 0.78rem;
-        margin-top: 2px;
-      }
-
-      .pane-chip {
-        display: inline-flex;
-        align-items: center;
-        gap: 5px;
-        background: rgba(29, 158, 117, 0.2);
-        color: #5dcaa5;
-        border-radius: 20px;
-        padding: 4px 12px;
-        font-size: 0.72rem;
-        font-weight: 600;
-      }
-
-      /* ─── PACOTES ─────────────────────────────── */
       .packages-grid {
-        margin-top: 4rem;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1.5rem;
-        align-items: start;
-      }
-      .package-card {
-        border-radius: var(--radius-lg);
-        border: 1.5px solid var(--border);
-        overflow: hidden;
-        background: var(--white);
-        transition:
-          transform 0.2s,
-          box-shadow 0.2s;
-      }
-      .package-card:hover {
-        transform: translateY(-4px);
-        box-shadow: 0 20px 60px rgba(9, 30, 66, 0.1);
-      }
-      .package-card.featured {
-        border-color: var(--blue-mid);
-        position: relative;
-      }
-      .package-badge {
-        background: var(--blue-mid);
-        color: #fff;
-        font-size: 0.72rem;
-        font-weight: 700;
-        letter-spacing: 0.05em;
-        text-align: center;
-        padding: 6px;
-        text-transform: uppercase;
-      }
-      .package-body {
-        padding: 1.75rem;
-      }
-      .package-name {
-        font-family: "Outfit", sans-serif;
-        font-weight: 700;
-        font-size: 0.8rem;
-        letter-spacing: 0.1em;
-        text-transform: uppercase;
-        color: var(--muted);
-        margin-bottom: 0.25rem;
-      }
-      .package-title {
-        font-family: "Outfit", sans-serif;
-        font-weight: 800;
-        font-size: 1.5rem;
-        color: var(--navy);
-        margin-bottom: 0.5rem;
-        letter-spacing: -0.02em;
-      }
-      .package-price {
-        display: flex;
-        align-items: baseline;
-        gap: 4px;
-        margin-bottom: 0.25rem;
-      }
-      .package-price-main {
-        font-family: "Outfit", sans-serif;
-        font-weight: 800;
-        font-size: 2.25rem;
-        color: var(--navy);
-        letter-spacing: -0.03em;
-      }
-      .package-price-sub {
-        font-size: 0.8rem;
-        color: var(--muted);
-      }
-      .package-installment {
-        font-size: 0.78rem;
-        color: var(--muted);
-        margin-bottom: 1.5rem;
-      }
-      .package-divider {
-        height: 1px;
-        background: var(--border);
-        margin: 1.5rem 0;
-      }
-      .package-features {
-        display: flex;
-        flex-direction: column;
-        gap: 0.65rem;
-        margin-bottom: 1.75rem;
-      }
-      .package-feature {
-        display: flex;
-        align-items: flex-start;
-        gap: 8px;
-        font-size: 0.875rem;
-        color: var(--muted);
-      }
-      .feature-check {
-        width: 16px;
-        height: 16px;
-        border-radius: 50%;
-        background: #e8f5e9;
-        color: #2e7d32;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-shrink: 0;
-        margin-top: 1px;
-        font-size: 0.6rem;
-      }
-      .package-cta {
-        display: block;
-        text-align: center;
-        background: var(--off);
-        color: var(--navy);
-        border: 1.5px solid var(--border);
-        border-radius: var(--radius-pill);
-        padding: 0.8rem;
-        font-weight: 600;
-        font-size: 0.875rem;
-        text-decoration: none;
-        transition:
-          background 0.2s,
-          border-color 0.2s;
-      }
-      .package-cta:hover {
-        background: var(--navy);
-        color: #fff;
-        border-color: var(--navy);
-      }
-      .package-card.featured .package-cta {
-        background: var(--blue-mid);
-        color: #fff;
-        border-color: var(--blue-mid);
-      }
-      .package-card.featured .package-cta:hover {
-        background: var(--blue);
-        border-color: var(--blue);
+        grid-template-columns: 1fr;
       }
 
-      .care-banner {
-        margin-top: 1.5rem;
-        background: var(--off);
-        border: 1px solid var(--border);
-        border-radius: var(--radius);
-        padding: 1.5rem 2rem;
-        display: flex;
-        align-items: center;
-        gap: 2rem;
-        flex-wrap: wrap;
-      }
-      .care-text {
-        flex: 1;
-      }
-      .care-text h4 {
-        font-family: "Outfit", sans-serif;
-        font-weight: 700;
-        color: var(--navy);
-        margin-bottom: 0.25rem;
-      }
-      .care-text p {
-        font-size: 0.875rem;
-        color: var(--muted);
-      }
-      .care-banner .btn-primary {
-        flex-shrink: 0;
-      }
-
-      /* ─── DEPOIMENTOS ────────────────────────── */
       .testimonials-grid {
-        margin-top: 3.5rem;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1.25rem;
-      }
-      .testimonial-card {
-        background: var(--white);
-        border: 1px solid var(--border);
-        border-radius: var(--radius);
-        padding: 1.5rem;
-        transition:
-          transform 0.2s,
-          box-shadow 0.2s;
-      }
-      .testimonial-card:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 12px 40px rgba(9, 30, 66, 0.08);
-      }
-      .testimonial-card:first-child {
-        grid-row: span 1;
-      }
-      .testimonial-stars {
-        display: flex;
-        gap: 2px;
-        margin-bottom: 0.75rem;
-        color: #ffb400;
-        font-size: 0.8rem;
-      }
-      .testimonial-text {
-        font-size: 0.9rem;
-        color: var(--navy);
-        line-height: 1.65;
-        margin-bottom: 1.25rem;
-        font-style: italic;
-      }
-      .testimonial-author {
-        display: flex;
-        align-items: center;
-        gap: 0.75rem;
-      }
-      .author-avatar {
-        width: 36px;
-        height: 36px;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: "Outfit", sans-serif;
-        font-weight: 700;
-        font-size: 0.8rem;
-        flex-shrink: 0;
-      }
-      .author-name {
-        font-weight: 600;
-        font-size: 0.875rem;
-        color: var(--navy);
-      }
-      .author-role {
-        font-size: 0.75rem;
-        color: var(--muted);
+        grid-template-columns: 1fr;
       }
 
-      /* ─── DIFERENCIAIS ───────────────────────── */
       .diff-layout {
-        margin-top: 4rem;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 4rem;
-        align-items: center;
+        grid-template-columns: 1fr;
       }
-      .diff-items {
-        display: flex;
-        flex-direction: column;
-        gap: 1.75rem;
+
+      .nav-links {
+        display: none;
       }
-      .diff-item {
-        display: flex;
+
+      .hero-stats {
         gap: 1.25rem;
       }
-      .diff-icon-wrap {
-        width: 44px;
-        height: 44px;
-        border-radius: 12px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-shrink: 0;
-        font-size: 1.15rem;
-      }
-      .diff-icon-wrap.navy {
-        background: var(--navy);
-        color: #fff;
-      }
-      .diff-icon-wrap.blue {
-        background: var(--blue-light);
-      }
-      .diff-icon-wrap.teal {
-        background: #e1f5ee;
-      }
-      .diff-icon-wrap.amber {
-        background: #fff8e1;
-      }
-      .diff-item h4 {
-        font-family: "Outfit", sans-serif;
-        font-weight: 700;
-        font-size: 1rem;
-        color: var(--navy);
-        margin-bottom: 0.25rem;
-      }
-      .diff-item p {
-        font-size: 0.875rem;
-        color: var(--muted);
-        line-height: 1.65;
-      }
+    }
+  </style>
+</head>
 
-      .diff-visual {
-        background: linear-gradient(
-          135deg,
-          var(--navy) 0%,
-          #1560bd 50%,
-          #0f6e56 100%
-        );
-        border-radius: var(--radius-lg);
-        padding: 2rem;
-        position: relative;
-        overflow: hidden;
-      }
-      .diff-visual-bg {
-        position: absolute;
-        top: -40%;
-        right: -20%;
-        width: 300px;
-        height: 300px;
-        border-radius: 50%;
-        background: rgba(255, 255, 255, 0.04);
-      }
-      .diff-score-card {
-        background: rgba(255, 255, 255, 0.08);
-        border: 1px solid rgba(255, 255, 255, 0.12);
-        border-radius: 12px;
-        padding: 1.25rem;
-        margin-bottom: 0.75rem;
-        position: relative;
-      }
-      .diff-score-label {
-        color: rgba(255, 255, 255, 0.5);
-        font-size: 0.72rem;
-        margin-bottom: 0.5rem;
-        text-transform: uppercase;
-        letter-spacing: 0.08em;
-      }
-      .diff-score-val {
-        font-family: "Outfit", sans-serif;
-        font-weight: 800;
-        font-size: 2.5rem;
-        color: #fff;
-        line-height: 1;
-      }
-      .diff-score-badge {
-        position: absolute;
-        top: 1.25rem;
-        right: 1.25rem;
-        background: #27c93f;
-        color: #fff;
-        border-radius: 20px;
-        padding: 3px 10px;
-        font-size: 0.68rem;
-        font-weight: 700;
-      }
-      .diff-bar-wrap {
-        margin-top: 0.75rem;
-      }
-      .diff-bar-label {
-        display: flex;
-        justify-content: space-between;
-        font-size: 0.7rem;
-        color: rgba(255, 255, 255, 0.5);
-        margin-bottom: 5px;
-      }
-      .diff-bar-track {
-        height: 6px;
-        background: rgba(255, 255, 255, 0.1);
-        border-radius: 3px;
-        overflow: hidden;
-      }
-      .diff-bar-fill {
-        height: 100%;
-        border-radius: 3px;
-        background: linear-gradient(90deg, #2b7fe8, #1d9e75);
-      }
+<body id="top">
+  <!-- NAV -->
+  <nav id="nav">
+    <a href="#top" class="nav-logo">
+      <div class="nav-logo-icon">
+        <img src="assets/logo.png" alt="Mappia Digital" style="width:100%;height:100%;object-fit:cover;" />
+      </div>
+      <div class="nav-logo-text">Mappia<span>.</span></div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#como-funciona">Como funciona</a></li>
+      <li><a href="#solucao">Nossa Solução</a></li>
+      <li><a href="#diferenciais">Diferenciais</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+    <a href="https://wa.me/5531990781307?text=Olá%2C+vim+pelo+site+e+quero+falar+com+um+consultor."
+      class="nav-cta">Falar com um Consultor →</a>
+  </nav>
 
-      .diff-tags {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.5rem;
-        margin-top: 1rem;
-      }
-      .diff-tag {
-        background: rgba(255, 255, 255, 0.1);
-        color: rgba(255, 255, 255, 0.7);
-        border-radius: 20px;
-        padding: 4px 12px;
-        font-size: 0.7rem;
-        font-weight: 500;
-      }
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-dots"></div>
 
-      /* ─── CTA ──────────────────────────────────── */
-      .cta-section {
-        padding: 100px clamp(1.5rem, 5vw, 6rem);
-        background: var(--navy);
-        position: relative;
-        overflow: hidden;
-      }
-      .cta-bg {
-        position: absolute;
-        inset: 0;
-        pointer-events: none;
-        background:
-          radial-gradient(
-            ellipse 60% 80% at 80% 50%,
-            rgba(43, 127, 232, 0.15) 0%,
-            transparent 60%
-          ),
-          radial-gradient(
-            ellipse 50% 50% at 20% 60%,
-            rgba(29, 158, 117, 0.1) 0%,
-            transparent 50%
-          );
-      }
-      .cta-content {
-        position: relative;
-        text-align: center;
-        max-width: 680px;
-        margin: 0 auto;
-      }
-      .cta-content .section-label {
-        color: #5dcaa5;
-        justify-content: center;
-      }
-      .cta-content .section-label::before {
-        background: #5dcaa5;
-      }
-      .cta-title {
-        font-family: "Outfit", sans-serif;
-        font-weight: 800;
-        font-size: clamp(2rem, 4vw, 3.25rem);
-        letter-spacing: -0.03em;
-        color: #fff;
-        line-height: 1.1;
-        margin: 0.75rem 0 1rem;
-      }
-      .cta-sub {
-        color: rgba(255, 255, 255, 0.55);
-        font-size: 1rem;
-        line-height: 1.7;
-        margin-bottom: 2rem;
-      }
-      .cta-actions {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 1rem;
-        flex-wrap: wrap;
-      }
-      .btn-white {
-        background: #fff;
-        color: var(--navy);
-        padding: 0.9rem 1.75rem;
-        border-radius: var(--radius-pill);
-        font-weight: 600;
-        font-size: 0.95rem;
-        text-decoration: none;
-        display: inline-flex;
-        align-items: center;
-        gap: 8px;
-        transition:
-          transform 0.15s,
-          box-shadow 0.2s;
-      }
-      .btn-white:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
-      }
-      .btn-outline-white {
-        background: transparent;
-        color: rgba(255, 255, 255, 0.8);
-        border: 1.5px solid rgba(255, 255, 255, 0.25);
-        padding: 0.9rem 1.5rem;
-        border-radius: var(--radius-pill);
-        font-weight: 500;
-        font-size: 0.95rem;
-        text-decoration: none;
-        transition:
-          border-color 0.2s,
-          background 0.2s;
-      }
-      .btn-outline-white:hover {
-        border-color: rgba(255, 255, 255, 0.5);
-        background: rgba(255, 255, 255, 0.06);
-      }
-      .cta-title em {
-        font-style: normal;
-        color: #5dcaa5;
-      }
-      .cta-note {
-        margin-top: 1.25rem;
-        font-size: 0.78rem;
-        color: rgba(255, 255, 255, 0.35);
-      }
-
-      /* ─── FAQ ──────────────────────────────────── */
-      .faq-layout {
-        margin-top: 4rem;
-        max-width: 720px;
-        margin-left: auto;
-        margin-right: auto;
-        display: flex;
-        flex-direction: column;
-        gap: 0;
-      }
-      .faq-item {
-        border-bottom: 1px solid var(--border);
-      }
-      .faq-trigger {
-        width: 100%;
-        background: none;
-        border: none;
-        cursor: pointer;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1.25rem 0;
-        font-family: "DM Sans", sans-serif;
-        font-size: 0.95rem;
-        font-weight: 600;
-        color: var(--navy);
-        text-align: left;
-        gap: 1rem;
-      }
-      .faq-icon {
-        width: 24px;
-        height: 24px;
-        border-radius: 50%;
-        background: var(--off);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-shrink: 0;
-        font-size: 0.8rem;
-        color: var(--muted);
-        transition:
-          transform 0.3s,
-          background 0.2s;
-      }
-      .faq-item.open .faq-icon {
-        transform: rotate(45deg);
-        background: var(--navy);
-        color: #fff;
-      }
-      .faq-body {
-        display: none;
-        padding-bottom: 1.25rem;
-      }
-      .faq-body p {
-        font-size: 0.875rem;
-        color: var(--muted);
-        line-height: 1.7;
-      }
-      .faq-item.open .faq-body {
-        display: block;
-      }
-
-      /* ─── FOOTER ───────────────────────────────── */
-      footer {
-        background: var(--off);
-        border-top: 1px solid var(--border);
-        padding: 3rem clamp(1.5rem, 5vw, 6rem);
-      }
-      .footer-inner {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        flex-wrap: wrap;
-        gap: 2rem;
-      }
-      .footer-brand {
-        max-width: 260px;
-      }
-      .footer-brand-name {
-        font-family: "Outfit", sans-serif;
-        font-weight: 700;
-        font-size: 1.1rem;
-        color: var(--navy);
-        margin-bottom: 0.5rem;
-      }
-      .footer-brand p {
-        font-size: 0.8rem;
-        color: var(--muted);
-        line-height: 1.6;
-      }
-      .footer-col h5 {
-        font-family: "Outfit", sans-serif;
-        font-weight: 700;
-        font-size: 0.8rem;
-        letter-spacing: 0.08em;
-        text-transform: uppercase;
-        color: var(--muted);
-        margin-bottom: 1rem;
-      }
-      .footer-col ul {
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-      }
-      .footer-col ul a {
-        font-size: 0.875rem;
-        color: var(--muted);
-        text-decoration: none;
-        transition: color 0.2s;
-      }
-      .footer-col ul a:hover {
-        color: var(--navy);
-      }
-      .footer-bottom {
-        margin-top: 2.5rem;
-        padding-top: 1.5rem;
-        border-top: 1px solid var(--border);
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 1rem;
-      }
-      .footer-bottom p {
-        font-size: 0.75rem;
-        color: var(--muted);
-      }
-
-      /* ─── WHATSAPP FLOAT ───────────────────────── */
-      .wa-float {
-        position: fixed;
-        bottom: 24px;
-        right: 24px;
-        z-index: 200;
-        width: 56px;
-        height: 56px;
-        border-radius: 50%;
-        background: #25d366;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        box-shadow: 0 8px 32px rgba(37, 211, 102, 0.4);
-        cursor: pointer;
-        text-decoration: none;
-        transition:
-          transform 0.2s,
-          box-shadow 0.2s;
-        animation: fadeUp 0.5s 1s ease both;
-      }
-      .wa-float:hover {
-        transform: scale(1.08);
-        box-shadow: 0 12px 40px rgba(37, 211, 102, 0.5);
-      }
-      .wa-float svg {
-        width: 28px;
-        height: 28px;
-        fill: #fff;
-      }
-      .wa-pulse {
-        position: absolute;
-        inset: -4px;
-        border-radius: 50%;
-        background: rgba(37, 211, 102, 0.3);
-        animation: waPulse 2.5s infinite;
-      }
-      @keyframes waPulse {
-        0% {
-          transform: scale(1);
-          opacity: 0.8;
-        }
-        100% {
-          transform: scale(1.5);
-          opacity: 0;
-        }
-      }
-
-      /* ─── ANIMATIONS ───────────────────────────── */
-      @keyframes fadeUp {
-        from {
-          opacity: 0;
-          transform: translateY(24px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-      @keyframes fadeIn {
-        from {
-          opacity: 0;
-        }
-        to {
-          opacity: 1;
-        }
-      }
-
-      .reveal {
-        opacity: 0;
-        transform: translateY(32px);
-        transition:
-          opacity 0.7s ease,
-          transform 0.7s ease;
-      }
-      .reveal.visible {
-        opacity: 1;
-        transform: none;
-      }
-      .reveal-delay-1 {
-        transition-delay: 0.1s;
-      }
-      .reveal-delay-2 {
-        transition-delay: 0.2s;
-      }
-      .reveal-delay-3 {
-        transition-delay: 0.3s;
-      }
-
-      /* ─── MOBILE ───────────────────────────────── */
-      @media (max-width: 900px) {
-        .hero {
-          grid-template-columns: 1fr;
-          min-height: auto;
-          gap: 3rem;
-          padding-top: 100px;
-        }
-        .hero-visual {
-          order: -1;
-        }
-        .float-card-1 {
-          right: -4%;
-        }
-        .float-card-2 {
-          left: -4%;
-        }
-        .problems-grid {
-          grid-template-columns: 1fr;
-        }
-        .process-layout {
-          grid-template-columns: 1fr;
-        }
-        .process-visual-pane {
-          position: static;
-          margin-top: 2rem;
-        }
-        .packages-grid {
-          grid-template-columns: 1fr;
-        }
-        .testimonials-grid {
-          grid-template-columns: 1fr;
-        }
-        .diff-layout {
-          grid-template-columns: 1fr;
-        }
-        .nav-links {
-          display: none;
-        }
-        .hero-stats {
-          gap: 1.25rem;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <!-- NAV -->
-    <nav id="nav">
-      <a href="#" class="nav-logo">
-        <div class="nav-logo-icon">
-          <svg
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="hero-badge-dot"></span>
+        Posicionamento digital para negócios locais
+      </div>
+      <h1>Enquanto você lê isso, seu concorrente está <em>pegando os seus clientes</em></h1>
+      <p class="hero-sub">
+        Todos os dias, clientes pesquisam no Google pelo que você oferece. Se
+        o seu negócio não aparece na frente, eles encontram seu concorrente. A
+        Mappia constrói o seu posicionamento digital e abre um novo canal de
+        vendas — 100% feito por nós, do início ao fim.
+      </p>
+      <div class="hero-actions">
+        <a href="https://wa.me/5531990781307?text=Olá%2C+vim+pelo+site+e+quero+descobrir+quanto+estou+perdendo+sem+posicionamento+digital."
+          class="btn-primary">
+          <svg viewBox="0 0 24 24" fill="currentColor">
             <path
-              d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"
-              fill="white"
-            />
+              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+            <path
+              d="M12 0C5.373 0 0 5.373 0 12c0 2.117.554 4.103 1.523 5.826L.057 23.215c-.094.32.195.608.515.514l5.389-1.466A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-4.993-1.365l-.357-.212-3.697 1.007.968-3.768-.232-.368A9.817 9.817 0 012.182 12C2.182 6.58 6.58 2.182 12 2.182S21.818 6.58 21.818 12 17.42 21.818 12 21.818z" />
           </svg>
-        </div>
-        <div class="nav-logo-text">Mappia<span>.</span></div>
-      </a>
-      <ul class="nav-links">
-        <li><a href="#como-funciona">Como funciona</a></li>
-        <li><a href="#solucao">Nossa Solução</a></li>
-        <li><a href="#diferenciais">Diferenciais</a></li>
-        <li><a href="#faq">FAQ</a></li>
-      </ul>
-      <a
-        href="https://wa.me/5531990781307?text=Olá%2C+vim+pelo+site+e+quero+falar+com+um+consultor."
-        class="nav-cta"
-        >Falar com um Consultor →</a
-      >
-    </nav>
-
-    <!-- HERO -->
-    <section class="hero">
-      <div class="hero-bg"></div>
-      <div class="hero-dots"></div>
-
-      <div class="hero-content">
-        <div class="hero-badge">
-          <span class="hero-badge-dot"></span>
-          Posicionamento digital para negócios locais
-        </div>
-        <h1>Enquanto você lê isso, seu concorrente está <em>pegando os seus clientes</em></h1>
-        <p class="hero-sub">
-          Todos os dias, clientes pesquisam no Google pelo que você oferece. Se
-          o seu negócio não aparece na frente, eles encontram seu concorrente. A
-          Mappia constrói o seu posicionamento digital e abre um novo canal de
-          vendas — 100% feito por nós, do início ao fim.
-        </p>
-        <div class="hero-actions">
-          <a
-            href="https://wa.me/5531990781307?text=Olá%2C+vim+pelo+site+e+quero+descobrir+quanto+estou+perdendo+sem+posicionamento+digital."
-            class="btn-primary"
-          >
-            <svg viewBox="0 0 24 24" fill="currentColor">
-              <path
-                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"
-              />
-              <path
-                d="M12 0C5.373 0 0 5.373 0 12c0 2.117.554 4.103 1.523 5.826L.057 23.215c-.094.32.195.608.515.514l5.389-1.466A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-4.993-1.365l-.357-.212-3.697 1.007.968-3.768-.232-.368A9.817 9.817 0 012.182 12C2.182 6.58 6.58 2.182 12 2.182S21.818 6.58 21.818 12 17.42 21.818 12 21.818z"
-              />
-            </svg>
-            Descobrir quanto estou perdendo
-          </a>
-          <a
-            href="https://wa.me/5531990781307?text=Olá%2C+vim+pelo+site+e+quero+agendar+um+diagnóstico+gratuito."
-            class="btn-ghost"
-            >Agendar Diagnóstico Gratuito</a
-          >
-        </div>
-        <div class="hero-stats">
-          <div class="hero-stat-item">
-            <div class="hero-stat-num">10 dias</div>
-            <div class="hero-stat-label">Prazo de entrega</div>
-          </div>
-          <div class="hero-stat-item">
-            <div class="hero-stat-num">24h</div>
-            <div class="hero-stat-label">Vendedor online</div>
-          </div>
-          <div class="hero-stat-item">
-            <div class="hero-stat-num">100%</div>
-            <div class="hero-stat-label">Feito por nós</div>
-          </div>
-        </div>
+          Descobrir quanto estou perdendo
+        </a>
+        <a href="https://wa.me/5531990781307?text=Olá%2C+vim+pelo+site+e+quero+agendar+um+diagnóstico+gratuito."
+          class="btn-ghost">Agendar Diagnóstico Gratuito</a>
       </div>
-
-      <div class="hero-visual">
-        <div class="hero-mockup">
-          <div class="mockup-bar">
-            <div class="mockup-dots">
-              <span></span><span></span><span></span>
-            </div>
-            <div class="mockup-url">mappia.com.br/barbearia-silva</div>
-          </div>
-          <div class="mockup-hero-preview">
-            <div class="preview-tag">⭐ Barbearia em Belo Horizonte</div>
-            <div class="preview-h1">Cortes que falam por você</div>
-            <div class="preview-sub">
-              Agendamento online · Barbearia Silva desde 2019 · Belo Horizonte,
-              MG
-            </div>
-            <div class="preview-btn">
-              <svg viewBox="0 0 24 24" fill="currentColor">
-                <path
-                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"
-                />
-              </svg>
-              Agendar pelo WhatsApp
-            </div>
-          </div>
-          <div class="mockup-content-strip">
-            <div class="mini-card">
-              <div class="mini-card-icon" style="background: #e6f1fb">
-                <svg
-                  width="14"
-                  height="14"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="#2B7FE8"
-                  stroke-width="2.5"
-                >
-                  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
-                  <circle cx="9" cy="7" r="4" />
-                  <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
-                  <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-                </svg>
-              </div>
-              <div class="mini-card-title">Sobre nós</div>
-              <div class="mini-card-sub">5 anos de tradição</div>
-            </div>
-            <div class="mini-card">
-              <div class="mini-card-icon" style="background: #e1f5ee">
-                <svg
-                  width="14"
-                  height="14"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="#1D9E75"
-                  stroke-width="2.5"
-                >
-                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
-                  <polyline points="9 22 9 12 15 12 15 22" />
-                </svg>
-              </div>
-              <div class="mini-card-title">Serviços</div>
-              <div class="mini-card-sub">Corte, barba e mais</div>
-            </div>
-            <div class="mini-card">
-              <div class="mini-card-icon" style="background: #fff8e1">
-                <svg
-                  width="14"
-                  height="14"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="#F59E0B"
-                  stroke-width="2.5"
-                >
-                  <polygon
-                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
-                  />
-                </svg>
-              </div>
-              <div class="mini-card-title">Avaliações</div>
-              <div class="mini-card-sub">4.9 · Google</div>
-            </div>
-          </div>
-          <div class="mockup-metrics">
-            <div class="metric-pill">✓ Totalmente seguro</div>
-            <div class="metric-pill blue">⚡ Abre na hora</div>
-            <div
-              class="metric-pill"
-              style="background: #f3efff; color: #7f77dd"
-            >
-              📱 Perfeito no celular
-            </div>
-          </div>
+      <div class="hero-stats">
+        <div class="hero-stat-item">
+          <div class="hero-stat-num">10 dias</div>
+          <div class="hero-stat-label">Prazo de entrega</div>
         </div>
-
-        <div class="floating-card float-card-1">
-          <div class="float-label">Experiência do Cliente</div>
-          <div class="float-label" style="font-weight: bold; font-size: 1rem; color: var(--navy)">Nota A</div>
-          <div class="float-badge">Excelente ↑</div>
+        <div class="hero-stat-item">
+          <div class="hero-stat-num">24h</div>
+          <div class="hero-stat-label">Vendedor online</div>
         </div>
-        <div class="floating-card float-card-2">
-          <div class="float-label">Tempo de entrega</div>
-          <div class="float-value">10 dias</div>
-          <div class="float-badge teal">Garantido</div>
+        <div class="hero-stat-item">
+          <div class="hero-stat-num">100%</div>
+          <div class="hero-stat-label">Feito por nós</div>
         </div>
-      </div>
-    </section>
-
-    <div class="trust-bar">
-      <p class="trust-label">Onde os seus clientes vão encontrar você</p>
-      <div class="trust-logos">
-        <div class="trust-logo">Busca do Google</div>
-        <div class="trust-logo">Google Maps</div>
-        <div class="trust-logo">WhatsApp</div>
-        <div class="trust-logo">Redes Sociais</div>
       </div>
     </div>
 
-    <!-- PROBLEMAS -->
-    <section class="section">
-      <div class="section-label reveal">O problema</div>
-      <h2 class="section-title reveal reveal-delay-1">
-        Seu negócio é bom. <em>Mas você está perdendo clientes todo dia.</em>
-      </h2>
-      <p class="section-sub reveal reveal-delay-2">
-        Você já calculou quanto está deixando de faturar por não ter um
-        posicionamento digital sólido? Enquanto isso, seu concorrente aparece
-        na frente e fecha o negócio que seria seu.
+    <div class="hero-visual">
+      <div class="hero-mockup">
+        <div class="mockup-bar">
+          <div class="mockup-dots">
+            <span></span><span></span><span></span>
+          </div>
+          <div class="mockup-url">mappia.com.br/barbearia-silva</div>
+        </div>
+        <div class="mockup-hero-preview">
+          <div class="preview-tag">⭐ Barbearia em Belo Horizonte</div>
+          <div class="preview-h1">Cortes que falam por você</div>
+          <div class="preview-sub">
+            Agendamento online · Barbearia Silva desde 2019 · Belo Horizonte,
+            MG
+          </div>
+          <div class="preview-btn">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+            </svg>
+            Agendar pelo WhatsApp
+          </div>
+        </div>
+        <div class="mockup-content-strip">
+          <div class="mini-card">
+            <div class="mini-card-icon" style="background: #e6f1fb">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#2B7FE8" stroke-width="2.5">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+              </svg>
+            </div>
+            <div class="mini-card-title">Sobre nós</div>
+            <div class="mini-card-sub">5 anos de tradição</div>
+          </div>
+          <div class="mini-card">
+            <div class="mini-card-icon" style="background: #f0e8ff">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="2.5">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                <polyline points="9 22 9 12 15 12 15 22" />
+              </svg>
+            </div>
+            <div class="mini-card-title">Serviços</div>
+            <div class="mini-card-sub">Corte, barba e mais</div>
+          </div>
+          <div class="mini-card">
+            <div class="mini-card-icon" style="background: #fff8e1">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2.5">
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+              </svg>
+            </div>
+            <div class="mini-card-title">Avaliações</div>
+            <div class="mini-card-sub">4.9 · Google</div>
+          </div>
+        </div>
+        <div class="mockup-metrics">
+          <div class="metric-pill">✓ Totalmente seguro</div>
+          <div class="metric-pill blue">⚡ Abre na hora</div>
+          <div class="metric-pill" style="background: #f3efff; color: #7f77dd">
+            📱 Perfeito no celular
+          </div>
+        </div>
+      </div>
+
+      <div class="floating-card float-card-1">
+        <div class="float-label">Experiência do Cliente</div>
+        <div class="float-label" style="font-weight: bold; font-size: 1rem; color: var(--navy)">Nota A</div>
+        <div class="float-badge">Excelente ↑</div>
+      </div>
+      <div class="floating-card float-card-2">
+        <div class="float-label">Tempo de entrega</div>
+        <div class="float-value">10 dias</div>
+        <div class="float-badge teal">Garantido</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="trust-bar">
+    <p class="trust-label">Onde os seus clientes vão encontrar você</p>
+    <div class="trust-logos">
+      <div class="trust-logo">Busca do Google</div>
+      <div class="trust-logo">Google Maps</div>
+      <div class="trust-logo">WhatsApp</div>
+      <div class="trust-logo">Redes Sociais</div>
+    </div>
+  </div>
+
+  <!-- PROBLEMAS -->
+  <section class="section">
+    <div class="section-label reveal">O problema</div>
+    <h2 class="section-title reveal reveal-delay-1">
+      Seu negócio é bom. <em>Mas você está perdendo clientes todo dia.</em>
+    </h2>
+    <p class="section-sub reveal reveal-delay-2">
+      Você já calculou quanto está deixando de faturar por não ter um
+      posicionamento digital sólido? Enquanto isso, seu concorrente aparece
+      na frente e fecha o negócio que seria seu.
+    </p>
+
+    <div class="problems-grid">
+      <div class="problem-card reveal">
+        <div class="problem-icon red">😤</div>
+        <h3>Sem posicionamento digital</h3>
+        <p>
+          Mais de 70% das pessoas pesquisam no Google antes de decidir onde
+          comprar. Se o seu negócio não aparece, essa venda vai direto para o
+          seu concorrente — todo dia, o tempo inteiro.
+        </p>
+      </div>
+      <div class="problem-card reveal reveal-delay-1">
+        <div class="problem-icon amber">🐢</div>
+        <h3>Cada segundo perdido é receita perdida</h3>
+        <p>
+          A cada segundo a mais de carregamento, a taxa de abandono sobe 30%.
+          Um canal de vendas lento ou mal estruturado espanta clientes antes
+          mesmo de eles verem o seu produto.
+        </p>
+      </div>
+      <div class="problem-card reveal reveal-delay-2">
+        <div class="problem-icon purple">📵</div>
+        <h3>Invisível no celular = invisível no mercado</h3>
+        <p>
+          Mais de 80% dos acessos locais vêm de celular. Se o seu negócio
+          não está otimizado para mobile, você está ignorando a principal
+          vitrine de vendas do Brasil.
+        </p>
+      </div>
+    </div>
+
+    <div class="problem-arrow reveal">
+      <div class="problem-arrow-line"></div>
+      <div class="problem-arrow-badge">
+        A Mappia constrói seu canal de vendas em 10 dias
+      </div>
+      <div class="problem-arrow-line"></div>
+    </div>
+  </section>
+
+  <!-- COMO FUNCIONA -->
+  <section class="section section-alt" id="como-funciona">
+    <div class="section-label reveal">Processo</div>
+    <h2 class="section-title reveal reveal-delay-1">
+      Do zero ao seu novo canal de vendas <em>em 10 dias</em>
+    </h2>
+    <p class="section-sub reveal reveal-delay-2">
+      Você dedica 30 minutos na nossa conversa inicial. A gente cuida de todo o resto —
+      da criação dos textos até colocar tudo funcionando na internet.
+    </p>
+
+    <div class="process-layout">
+      <div class="process-steps reveal">
+        <div class="process-step active" data-step="0">
+          <div class="step-num">1</div>
+          <div class="step-content">
+            <div class="step-title">Diagnóstico e Briefing</div>
+            <div class="step-desc">
+              Fazemos uma chamada rápida para entender seu negócio, seu
+              mercado local e o que você quer conquistar. A Mappia já cria
+              toda a estratégia e os textos — você só valida.
+            </div>
+          </div>
+        </div>
+        <div class="process-step" data-step="1">
+          <div class="step-num">2</div>
+          <div class="step-content">
+            <div class="step-title">Mão na massa (Dias 1 a 8)</div>
+            <div class="step-desc">
+              Nossa equipe monta o seu site, ajusta o visual com a cara do seu negócio,
+              conecta seu WhatsApp e o Google Maps, e aplica as melhores práticas para você ser
+              facilmente encontrado na internet. Você não precisa mexer em nada.
+            </div>
+          </div>
+        </div>
+        <div class="process-step" data-step="2">
+          <div class="step-num">3</div>
+          <div class="step-content">
+            <div class="step-title">Você revisa e aprova (Dias 9 a 10)</div>
+            <div class="step-desc">
+              Enviamos um link provisório para você ver tudo funcionando. Você tem
+              tranquilidade para pedir ajustes nos textos ou fotos, e nós resolvemos rápido
+              para deixar exatamente como você imaginou.
+            </div>
+          </div>
+        </div>
+        <div class="process-step" data-step="3">
+          <div class="step-num">4</div>
+          <div class="step-content">
+            <div class="step-title">Lançamento na internet</div>
+            <div class="step-desc">
+              Registramos seu endereço (o www), ativamos a segurança e deixamos
+              seu perfil do Google pronto para receber clientes. Seu negócio passa a
+              existir profissionalmente para quem busca pelos seus serviços.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="process-visual-pane reveal reveal-delay-2">
+        <div class="pane-header">
+          <div class="pane-step-badge" id="pane-step">Passo 1</div>
+          <div class="pane-step-title" id="pane-title">Briefing</div>
+        </div>
+        <div class="pane-body">
+          <div class="pane-card active" id="pane-0">
+            <div class="pane-row">
+              <div class="pane-row-label">Sua Área</div>
+              <div class="pane-row-value">Barbearia / Salão</div>
+              <div class="pane-row-sub">
+                Conhecemos o que o seu cliente procura
+              </div>
+            </div>
+            <div class="pane-row">
+              <div class="pane-row-label">Identidade Visual</div>
+              <div class="pane-row-value">Azul marinho + dourado</div>
+            </div>
+            <div class="pane-row">
+              <div class="pane-row-label">Diferencial</div>
+              <div class="pane-row-value">Atendimento sem hora marcada</div>
+            </div>
+            <div class="pane-chip">✓ Textos criados pela IA da Mappia</div>
+          </div>
+          <div class="pane-card" id="pane-1">
+            <div class="pane-row">
+              <div class="pane-row-label">Tecnologia Oculta</div>
+              <div class="pane-row-value">Estrutura de ponta (sem travar)</div>
+              <div class="pane-row-sub">
+                Mais velocidade = Menos clientes desistindo
+              </div>
+            </div>
+            <div class="pane-row">
+              <div class="pane-row-label">Conexões Inclusas</div>
+              <div class="pane-row-value">WhatsApp · Mapa do Google</div>
+            </div>
+            <div class="pane-row">
+              <div class="pane-row-label">Organização</div>
+              <div class="pane-row-value">Tudo salvo com total segurança</div>
+            </div>
+            <div class="pane-chip">⚙ Trabalhamos enquanto você cuida da sua loja</div>
+          </div>
+          <div class="pane-card" id="pane-2">
+            <div class="pane-row">
+              <div class="pane-row-label">Aprovação</div>
+              <div class="pane-row-value">Link secreto só para você ver</div>
+              <div class="pane-row-sub">Analise no seu celular antes de lançar</div>
+            </div>
+            <div class="pane-row">
+              <div class="pane-row-label">Revisão de Qualidade</div>
+              <div class="pane-row-value">Passamos um pente fino</div>
+              <div class="pane-row-sub">
+                Testamos todos os botões e no celular
+              </div>
+            </div>
+            <div class="pane-chip">
+              ✓ Ajustes feitos sem burocracia
+            </div>
+          </div>
+          <div class="pane-card" id="pane-3">
+            <div class="pane-row">
+              <div class="pane-row-label">Espaço na Internet</div>
+              <div class="pane-row-value">Aluguel do servidor já pago</div>
+              <div class="pane-row-sub">Sem taxas mensais surpresa</div>
+            </div>
+            <div class="pane-row">
+              <div class="pane-row-label">Endereço Web</div>
+              <div class="pane-row-value">Registro do seu-nome.com.br</div>
+            </div>
+            <div class="pane-row">
+              <div class="pane-row-label">Busca no Google</div>
+              <div class="pane-row-value">Sua empresa pronta para ser achada</div>
+            </div>
+            <div class="pane-chip">🚀 Seu novo canal de vendas no ar. Pronto para receber clientes.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NOSSA SOLUÇÃO -->
+  <section class="section" id="solucao">
+    <div class="section-label reveal">Nossa Solução</div>
+    <h2 class="section-title reveal reveal-delay-1">
+      Tudo que você precisa para <em>dominar o digital</em> — feito por nós
+    </h2>
+    <p class="section-sub reveal reveal-delay-2">
+      Você foca no seu negócio. A gente cuida de tudo: estratégia, design,
+      tecnologia e posicionamento no Google.
+    </p>
+
+    <div class="packages-grid reveal reveal-delay-1">
+      <!-- Diagnóstico -->
+      <div class="package-card">
+        <div class="package-body">
+          <div class="package-name">Passo 1</div>
+          <div class="package-title">Diagnóstico de Posicionamento</div>
+          <div class="package-divider"></div>
+          <div class="package-features">
+            <div class="package-feature">
+              <div class="feature-check">✓</div>
+              <span>Análise do seu mercado local e concorrentes</span>
+            </div>
+            <div class="package-feature">
+              <div class="feature-check">✓</div>
+              <span>Mapeamento das oportunidades digitais do seu nicho</span>
+            </div>
+            <div class="package-feature">
+              <div class="feature-check">✓</div>
+              <span>Identificação de quanto você está perdendo hoje</span>
+            </div>
+            <div class="package-feature">
+              <div class="feature-check">✓</div>
+              <span>Estratégia personalizada para o seu negócio</span>
+            </div>
+            <div class="package-feature">
+              <div class="feature-check">✓</div>
+              <span>Conversa direta com um consultor especialista</span>
+            </div>
+          </div>
+          <a href="https://wa.me/5531990781307?text=Olá%2C+vim+pelo+site+e+quero+agendar+meu+diagnóstico+gratuito."
+            class="package-cta">Quero meu diagnóstico gratuito →</a>
+        </div>
+      </div>
+
+      <!-- Canal de Vendas -->
+      <div class="package-card featured">
+        <div class="package-badge">⭐ Solução Completa</div>
+        <div class="package-body">
+          <div class="package-name">Passo 2</div>
+          <div class="package-title">Canal de Vendas Digital</div>
+          <div class="package-divider"></div>
+          <div class="package-features">
+            <div class="package-feature">
+              <div class="feature-check">✓</div>
+              <span>Posicionamento profissional no Google — apareça na frente</span>
+            </div>
+            <div class="package-feature">
+              <div class="feature-check">✓</div>
+              <span>Canal de vendas online que funciona 24h por dia</span>
+            </div>
+            <div class="package-feature">
+              <div class="feature-check">✓</div>
+              <span>Google Meu Negócio configurado e otimizado</span>
+            </div>
+            <div class="package-feature">
+              <div class="feature-check">✓</div>
+              <span>Integração direta com WhatsApp para receber contatos</span>
+            </div>
+            <div class="package-feature">
+              <div class="feature-check">✓</div>
+              <span>Endereço na web, manutenção no ar e segurança — tudo incluso</span>
+            </div>
+            <div class="package-feature">
+              <div class="feature-check">✓</div>
+              <span>Você não precisa entender de tecnologia. Nós fazemos tudo.</span>
+            </div>
+            <div class="package-feature">
+              <div class="feature-check">✓</div>
+              <span><strong>Entrega em 10 dias corridos</strong></span>
+            </div>
+          </div>
+          <a href="https://wa.me/5531990781307?text=Olá%2C+vim+pelo+site+e+quero+falar+com+um+consultor+sobre+meu+canal+de+vendas."
+            class="package-cta">Falar com um Consultor →</a>
+        </div>
+      </div>
+
+      <!-- Crescimento Contínuo -->
+      <div class="package-card">
+        <div class="package-body">
+          <div class="package-name">Passo 3</div>
+          <div class="package-title">Crescimento Contínuo</div>
+          <div class="package-divider"></div>
+          <div class="package-features">
+            <div class="package-feature">
+              <div class="feature-check">✓</div>
+              <span>Manutenção e atualizações contínuas</span>
+            </div>
+            <div class="package-feature">
+              <div class="feature-check">✓</div>
+              <span>Suporte técnico prioritário</span>
+            </div>
+            <div class="package-feature">
+              <div class="feature-check">✓</div>
+              <span>Melhorias constantes para aparecer mais e vender mais</span>
+            </div>
+            <div class="package-feature">
+              <div class="feature-check">✓</div>
+              <span>Seu canal de vendas sempre no ar e melhorando</span>
+            </div>
+            <div class="package-feature">
+              <div class="feature-check">✓</div>
+              <span>Você foca no negócio. A gente cuida do digital.</span>
+            </div>
+          </div>
+          <a href="https://wa.me/5531990781307?text=Olá%2C+vim+pelo+site+e+quero+conhecer+o+plano+de+crescimento+contínuo."
+            class="package-cta">Conhecer o plano de crescimento →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="care-banner reveal reveal-delay-2">
+      <div class="care-text">
+        <h4>Converse com um consultor — sem custo, sem compromisso</h4>
+        <p>
+          Analisamos o seu negócio, mostramos o que está sendo deixado na
+          mesa e apresentamos o caminho ideal para você. Só então você decide.
+        </p>
+      </div>
+      <a href="https://wa.me/5531990781307?text=Olá%2C+vim+pelo+site+e+quero+agendar+um+diagnóstico+gratuito."
+        class="btn-primary" style="white-space: nowrap; flex-shrink: 0">
+        Agendar Diagnóstico Gratuito
+      </a>
+    </div>
+  </section>
+
+  <!-- DIFERENCIAIS -->
+  <section class="section section-alt" id="diferenciais">
+    <div class="section-label reveal">Por que a Mappia</div>
+    <h2 class="section-title reveal reveal-delay-1">
+      Seu novo canal de vendas <em>construído para converter</em>, não só para parecer bonito
+    </h2>
+
+    <div class="diff-layout">
+      <div class="diff-items">
+        <div class="diff-item reveal">
+          <div class="diff-icon-wrap navy">⚡</div>
+          <div>
+            <h4>Velocidade que não deixa o cliente fugir</h4>
+            <p>
+              Passamos por testes rigorosos. Sites lentos espantam
+              clientes e te jogam pro final da fila no Google. Nossa estrutura
+              abre na hora no celular do seu cliente.
+            </p>
+          </div>
+        </div>
+        <div class="diff-item reveal reveal-delay-1">
+          <div class="diff-icon-wrap blue">📱</div>
+          <div>
+            <h4>Pensado primeiro para o celular</h4>
+            <p>
+              Projetado primeiro para a tela do smartphone, depois para o computador. Mais de
+              80% dos seus clientes vão acessar pelo celular — o site precisa
+              ser perfeito ali.
+            </p>
+          </div>
+        </div>
+        <div class="diff-item reveal reveal-delay-2">
+          <div class="diff-icon-wrap teal">🗺</div>
+          <div>
+            <h4>Google Meu Negócio incluído</h4>
+            <p>
+              Configuramos e otimizamos seu perfil no Google. Seu negócio
+              aparece no mapa e nas buscas locais logo no dia do lançamento.
+            </p>
+          </div>
+        </div>
+        <div class="diff-item reveal reveal-delay-3">
+          <div class="diff-icon-wrap amber">🤝</div>
+          <div>
+            <h4>100% feito por nós — você não precisa fazer nada</h4>
+            <p>
+              Endereço do site, espaço na internet, visual, escrita, Google e WhatsApp. Do início
+              ao fim, é com a gente. Você foca no seu negócio enquanto a
+              Mappia constrói e mantém o seu canal de vendas.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="diff-visual reveal reveal-delay-2">
+        <div class="diff-visual-bg"></div>
+        <div class="diff-score-card">
+          <div class="diff-score-label">Avaliação de Qualidade (Google)</div>
+          <div class="diff-score-val">Nota A</div>
+          <div class="diff-score-badge">Excelente</div>
+          <div class="diff-bar-wrap">
+            <div class="diff-bar-label">
+              <span>Rapidez no Celular</span><span>✓</span>
+            </div>
+            <div class="diff-bar-track">
+              <div class="diff-bar-fill" style="width: 100%"></div>
+            </div>
+          </div>
+          <div class="diff-bar-wrap" style="margin-top: 8px">
+            <div class="diff-bar-label"><span>Fácil de Encontrar</span><span>✓</span></div>
+            <div class="diff-bar-track">
+              <div class="diff-bar-fill" style="width: 100%"></div>
+            </div>
+          </div>
+          <div class="diff-bar-wrap" style="margin-top: 8px">
+            <div class="diff-bar-label">
+              <span>Fácil de Usar</span><span>✓</span>
+            </div>
+            <div class="diff-bar-track">
+              <div class="diff-bar-fill" style="width: 100%"></div>
+            </div>
+          </div>
+        </div>
+        <div class="diff-tags">
+          <div class="diff-tag">Cadeado de Segurança</div>
+          <div class="diff-tag">Proteção de Dados</div>
+          <div class="diff-tag">Textos Escritos à Mão</div>
+          <div class="diff-tag">Foco no Celular</div>
+          <div class="diff-tag">WhatsApp Direto</div>
+          <div class="diff-tag">Pronto para Anúncios</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS -->
+  <section class="section">
+    <div class="section-label reveal">Quem já está convertendo</div>
+    <h2 class="section-title reveal reveal-delay-1">
+      Negócios reais que <em>abriram um novo canal de vendas</em>
+    </h2>
+
+    <div class="testimonials-grid">
+      <div class="testimonial-card reveal">
+        <div class="testimonial-stars">★★★★★</div>
+        <div class="testimonial-text">
+          "Em três semanas do site no ar já recebi mensagens de clientes novos
+          que me acharam no Google. Antes eu dependia só de indicação."
+        </div>
+        <div class="testimonial-author">
+          <div class="author-avatar" style="background: #e6f1fb; color: #1560bd">
+            RS
+          </div>
+          <div>
+            <div class="author-name">Ricardo S.</div>
+            <div class="author-role">Barbearia Clássica · Niterói, RJ</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal reveal-delay-1">
+        <div class="testimonial-stars">★★★★★</div>
+        <div class="testimonial-text">
+          "O processo foi rápido e simples. Passei menos de 30 minutos no
+          briefing e em 10 dias o site estava no ar, melhor do que eu
+          esperava."
+        </div>
+        <div class="testimonial-author">
+          <div class="author-avatar" style="background: #f0e8ff; color: #7C3AED">
+            AC
+          </div>
+          <div>
+            <div class="author-name">Ana C.</div>
+            <div class="author-role">
+              Clínica de Estética · São Gonçalo, RJ
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal reveal-delay-2">
+        <div class="testimonial-stars">★★★★★</div>
+        <div class="testimonial-text">
+          "Meu site antigo era lento e feio. Depois da Mappia os clientes
+          comentam o quanto o site ficou profissional. Faz diferença na
+          percepção."
+        </div>
+        <div class="testimonial-author">
+          <div class="author-avatar" style="background: #fff8e1; color: #b45309">
+            MF
+          </div>
+          <div>
+            <div class="author-name">Marcos F.</div>
+            <div class="author-role">Oficina Mecânica · Niterói, RJ</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA INTERMEDIÁRIO -->
+  <section class="cta-section">
+    <div class="cta-bg"></div>
+    <div class="cta-content">
+      <div class="section-label">Comece hoje</div>
+      <h2 class="cta-title">Quanto você está deixando na mesa <em>todo dia</em>?</h2>
+      <p class="cta-sub">
+        Cada dia sem um posicionamento digital forte é um dia que seu
+        concorrente fecha negócios que seriam seus. Nossa consultoria inicial
+        é gratuita e sem compromisso.
       </p>
-
-      <div class="problems-grid">
-        <div class="problem-card reveal">
-          <div class="problem-icon red">😤</div>
-          <h3>Sem posicionamento digital</h3>
-          <p>
-            Mais de 70% das pessoas pesquisam no Google antes de decidir onde
-            comprar. Se o seu negócio não aparece, essa venda vai direto para o
-            seu concorrente — todo dia, o tempo inteiro.
-          </p>
-        </div>
-        <div class="problem-card reveal reveal-delay-1">
-          <div class="problem-icon amber">🐢</div>
-          <h3>Cada segundo perdido é receita perdida</h3>
-          <p>
-            A cada segundo a mais de carregamento, a taxa de abandono sobe 30%.
-            Um canal de vendas lento ou mal estruturado espanta clientes antes
-            mesmo de eles verem o seu produto.
-          </p>
-        </div>
-        <div class="problem-card reveal reveal-delay-2">
-          <div class="problem-icon purple">📵</div>
-          <h3>Invisível no celular = invisível no mercado</h3>
-          <p>
-            Mais de 80% dos acessos locais vêm de celular. Se o seu negócio
-            não está otimizado para mobile, você está ignorando a principal
-            vitrine de vendas do Brasil.
-          </p>
-        </div>
-      </div>
-
-      <div class="problem-arrow reveal">
-        <div class="problem-arrow-line"></div>
-        <div class="problem-arrow-badge">
-          A Mappia constrói seu canal de vendas em 10 dias
-        </div>
-        <div class="problem-arrow-line"></div>
-      </div>
-    </section>
-
-    <!-- COMO FUNCIONA -->
-    <section class="section section-alt" id="como-funciona">
-      <div class="section-label reveal">Processo</div>
-      <h2 class="section-title reveal reveal-delay-1">
-        Do zero ao seu novo canal de vendas <em>em 10 dias</em>
-      </h2>
-      <p class="section-sub reveal reveal-delay-2">
-        Você dedica 30 minutos na nossa conversa inicial. A gente cuida de todo o resto —
-        da criação dos textos até colocar tudo funcionando na internet.
-      </p>
-
-      <div class="process-layout">
-        <div class="process-steps reveal">
-          <div class="process-step active" data-step="0">
-            <div class="step-num">1</div>
-            <div class="step-content">
-              <div class="step-title">Diagnóstico e Briefing</div>
-              <div class="step-desc">
-                Fazemos uma chamada rápida para entender seu negócio, seu
-                mercado local e o que você quer conquistar. A Mappia já cria
-                toda a estratégia e os textos — você só valida.
-              </div>
-            </div>
-          </div>
-          <div class="process-step" data-step="1">
-            <div class="step-num">2</div>
-            <div class="step-content">
-              <div class="step-title">Mão na massa (Dias 1 a 8)</div>
-              <div class="step-desc">
-                Nossa equipe monta o seu site, ajusta o visual com a cara do seu negócio, 
-                conecta seu WhatsApp e o Google Maps, e aplica as melhores práticas para você ser 
-                facilmente encontrado na internet. Você não precisa mexer em nada.
-              </div>
-            </div>
-          </div>
-          <div class="process-step" data-step="2">
-            <div class="step-num">3</div>
-            <div class="step-content">
-              <div class="step-title">Você revisa e aprova (Dias 9 a 10)</div>
-              <div class="step-desc">
-                Enviamos um link provisório para você ver tudo funcionando. Você tem 
-                tranquilidade para pedir ajustes nos textos ou fotos, e nós resolvemos rápido 
-                para deixar exatamente como você imaginou.
-              </div>
-            </div>
-          </div>
-          <div class="process-step" data-step="3">
-            <div class="step-num">4</div>
-            <div class="step-content">
-              <div class="step-title">Lançamento na internet</div>
-              <div class="step-desc">
-                Registramos seu endereço (o www), ativamos a segurança e deixamos 
-                seu perfil do Google pronto para receber clientes. Seu negócio passa a 
-                existir profissionalmente para quem busca pelos seus serviços.
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="process-visual-pane reveal reveal-delay-2">
-          <div class="pane-header">
-            <div class="pane-step-badge" id="pane-step">Passo 1</div>
-            <div class="pane-step-title" id="pane-title">Briefing</div>
-          </div>
-          <div class="pane-body">
-            <div class="pane-card active" id="pane-0">
-              <div class="pane-row">
-                <div class="pane-row-label">Sua Área</div>
-                <div class="pane-row-value">Barbearia / Salão</div>
-                <div class="pane-row-sub">
-                  Conhecemos o que o seu cliente procura
-                </div>
-              </div>
-              <div class="pane-row">
-                <div class="pane-row-label">Identidade Visual</div>
-                <div class="pane-row-value">Azul marinho + dourado</div>
-              </div>
-              <div class="pane-row">
-                <div class="pane-row-label">Diferencial</div>
-                <div class="pane-row-value">Atendimento sem hora marcada</div>
-              </div>
-              <div class="pane-chip">✓ Textos criados pela IA da Mappia</div>
-            </div>
-            <div class="pane-card" id="pane-1">
-              <div class="pane-row">
-                <div class="pane-row-label">Tecnologia Oculta</div>
-                <div class="pane-row-value">Estrutura de ponta (sem travar)</div>
-                <div class="pane-row-sub">
-                  Mais velocidade = Menos clientes desistindo
-                </div>
-              </div>
-              <div class="pane-row">
-                <div class="pane-row-label">Conexões Inclusas</div>
-                <div class="pane-row-value">WhatsApp · Mapa do Google</div>
-              </div>
-              <div class="pane-row">
-                <div class="pane-row-label">Organização</div>
-                <div class="pane-row-value">Tudo salvo com total segurança</div>
-              </div>
-              <div class="pane-chip">⚙ Trabalhamos enquanto você cuida da sua loja</div>
-            </div>
-            <div class="pane-card" id="pane-2">
-              <div class="pane-row">
-                <div class="pane-row-label">Aprovação</div>
-                <div class="pane-row-value">Link secreto só para você ver</div>
-                <div class="pane-row-sub">Analise no seu celular antes de lançar</div>
-              </div>
-              <div class="pane-row">
-                <div class="pane-row-label">Revisão de Qualidade</div>
-                <div class="pane-row-value">Passamos um pente fino</div>
-                <div class="pane-row-sub">
-                  Testamos todos os botões e no celular
-                </div>
-              </div>
-              <div class="pane-chip">
-                ✓ Ajustes feitos sem burocracia
-              </div>
-            </div>
-            <div class="pane-card" id="pane-3">
-              <div class="pane-row">
-                <div class="pane-row-label">Espaço na Internet</div>
-                <div class="pane-row-value">Aluguel do servidor já pago</div>
-                <div class="pane-row-sub">Sem taxas mensais surpresa</div>
-              </div>
-              <div class="pane-row">
-                <div class="pane-row-label">Endereço Web</div>
-                <div class="pane-row-value">Registro do seu-nome.com.br</div>
-              </div>
-              <div class="pane-row">
-                <div class="pane-row-label">Busca no Google</div>
-                <div class="pane-row-value">Sua empresa pronta para ser achada</div>
-              </div>
-              <div class="pane-chip">🚀 Seu novo canal de vendas no ar. Pronto para receber clientes.</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- NOSSA SOLUÇÃO -->
-    <section class="section" id="solucao">
-      <div class="section-label reveal">Nossa Solução</div>
-      <h2 class="section-title reveal reveal-delay-1">
-        Tudo que você precisa para <em>dominar o digital</em> — feito por nós
-      </h2>
-      <p class="section-sub reveal reveal-delay-2">
-        Você foca no seu negócio. A gente cuida de tudo: estratégia, design,
-        tecnologia e posicionamento no Google.
-      </p>
-
-      <div class="packages-grid reveal reveal-delay-1">
-        <!-- Diagnóstico -->
-        <div class="package-card">
-          <div class="package-body">
-            <div class="package-name">Passo 1</div>
-            <div class="package-title">Diagnóstico de Posicionamento</div>
-            <div class="package-divider"></div>
-            <div class="package-features">
-              <div class="package-feature">
-                <div class="feature-check">✓</div>
-                <span>Análise do seu mercado local e concorrentes</span>
-              </div>
-              <div class="package-feature">
-                <div class="feature-check">✓</div>
-                <span>Mapeamento das oportunidades digitais do seu nicho</span>
-              </div>
-              <div class="package-feature">
-                <div class="feature-check">✓</div>
-                <span>Identificação de quanto você está perdendo hoje</span>
-              </div>
-              <div class="package-feature">
-                <div class="feature-check">✓</div>
-                <span>Estratégia personalizada para o seu negócio</span>
-              </div>
-              <div class="package-feature">
-                <div class="feature-check">✓</div>
-                <span>Conversa direta com um consultor especialista</span>
-              </div>
-            </div>
-            <a
-              href="https://wa.me/5531990781307?text=Olá%2C+vim+pelo+site+e+quero+agendar+meu+diagnóstico+gratuito."
-              class="package-cta"
-              >Quero meu diagnóstico gratuito →</a
-            >
-          </div>
-        </div>
-
-        <!-- Canal de Vendas -->
-        <div class="package-card featured">
-          <div class="package-badge">⭐ Solução Completa</div>
-          <div class="package-body">
-            <div class="package-name">Passo 2</div>
-            <div class="package-title">Canal de Vendas Digital</div>
-            <div class="package-divider"></div>
-            <div class="package-features">
-              <div class="package-feature">
-                <div class="feature-check">✓</div>
-                <span>Posicionamento profissional no Google — apareça na frente</span>
-              </div>
-              <div class="package-feature">
-                <div class="feature-check">✓</div>
-                <span>Canal de vendas online que funciona 24h por dia</span>
-              </div>
-              <div class="package-feature">
-                <div class="feature-check">✓</div>
-                <span>Google Meu Negócio configurado e otimizado</span>
-              </div>
-              <div class="package-feature">
-                <div class="feature-check">✓</div>
-                <span>Integração direta com WhatsApp para receber contatos</span>
-              </div>
-              <div class="package-feature">
-                <div class="feature-check">✓</div>
-                <span>Endereço na web, manutenção no ar e segurança — tudo incluso</span>
-              </div>
-              <div class="package-feature">
-                <div class="feature-check">✓</div>
-                <span>Você não precisa entender de tecnologia. Nós fazemos tudo.</span>
-              </div>
-              <div class="package-feature">
-                <div class="feature-check">✓</div>
-                <span><strong>Entrega em 10 dias corridos</strong></span>
-              </div>
-            </div>
-            <a
-              href="https://wa.me/5531990781307?text=Olá%2C+vim+pelo+site+e+quero+falar+com+um+consultor+sobre+meu+canal+de+vendas."
-              class="package-cta"
-              >Falar com um Consultor →</a
-            >
-          </div>
-        </div>
-
-        <!-- Crescimento Contínuo -->
-        <div class="package-card">
-          <div class="package-body">
-            <div class="package-name">Passo 3</div>
-            <div class="package-title">Crescimento Contínuo</div>
-            <div class="package-divider"></div>
-            <div class="package-features">
-              <div class="package-feature">
-                <div class="feature-check">✓</div>
-                <span>Manutenção e atualizações contínuas</span>
-              </div>
-              <div class="package-feature">
-                <div class="feature-check">✓</div>
-                <span>Suporte técnico prioritário</span>
-              </div>
-              <div class="package-feature">
-                <div class="feature-check">✓</div>
-                <span>Melhorias constantes para aparecer mais e vender mais</span>
-              </div>
-              <div class="package-feature">
-                <div class="feature-check">✓</div>
-                <span>Seu canal de vendas sempre no ar e melhorando</span>
-              </div>
-              <div class="package-feature">
-                <div class="feature-check">✓</div>
-                <span>Você foca no negócio. A gente cuida do digital.</span>
-              </div>
-            </div>
-            <a
-              href="https://wa.me/5531990781307?text=Olá%2C+vim+pelo+site+e+quero+conhecer+o+plano+de+crescimento+contínuo."
-              class="package-cta"
-              >Conhecer o plano de crescimento →</a
-            >
-          </div>
-        </div>
-      </div>
-
-      <div class="care-banner reveal reveal-delay-2">
-        <div class="care-text">
-          <h4>Converse com um consultor — sem custo, sem compromisso</h4>
-          <p>
-            Analisamos o seu negócio, mostramos o que está sendo deixado na
-            mesa e apresentamos o caminho ideal para você. Só então você decide.
-          </p>
-        </div>
-        <a
-          href="https://wa.me/5531990781307?text=Olá%2C+vim+pelo+site+e+quero+agendar+um+diagnóstico+gratuito."
-          class="btn-primary"
-          style="white-space: nowrap; flex-shrink: 0"
-        >
+      <div class="cta-actions">
+        <a href="https://wa.me/5531990781307?text=Olá%2C+vim+pelo+site+e+quero+agendar+meu+diagnóstico+gratuito."
+          class="btn-white">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+            <path
+              d="M12 0C5.373 0 0 5.373 0 12c0 2.117.554 4.103 1.523 5.826L.057 23.215c-.094.32.195.608.515.514l5.389-1.466A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-4.993-1.365l-.357-.212-3.697 1.007.968-3.768-.232-.368A9.817 9.817 0 012.182 12C2.182 6.58 6.58 2.182 12 2.182S21.818 6.58 21.818 12 17.42 21.818 12 21.818z" />
+          </svg>
           Agendar Diagnóstico Gratuito
         </a>
+        <a href="https://wa.me/5531990781307?text=Olá%2C+vim+pelo+site+e+quero+falar+com+um+consultor."
+          class="btn-outline-white">Falar com um Consultor</a>
       </div>
-    </section>
-
-    <!-- DIFERENCIAIS -->
-    <section class="section section-alt" id="diferenciais">
-      <div class="section-label reveal">Por que a Mappia</div>
-      <h2 class="section-title reveal reveal-delay-1">
-        Seu novo canal de vendas <em>construído para converter</em>, não só para parecer bonito
-      </h2>
-
-      <div class="diff-layout">
-        <div class="diff-items">
-          <div class="diff-item reveal">
-            <div class="diff-icon-wrap navy">⚡</div>
-            <div>
-              <h4>Velocidade que não deixa o cliente fugir</h4>
-              <p>
-                Passamos por testes rigorosos. Sites lentos espantam
-                clientes e te jogam pro final da fila no Google. Nossa estrutura 
-                abre na hora no celular do seu cliente.
-              </p>
-            </div>
-          </div>
-          <div class="diff-item reveal reveal-delay-1">
-            <div class="diff-icon-wrap blue">📱</div>
-            <div>
-              <h4>Pensado primeiro para o celular</h4>
-              <p>
-                Projetado primeiro para a tela do smartphone, depois para o computador. Mais de
-                80% dos seus clientes vão acessar pelo celular — o site precisa
-                ser perfeito ali.
-              </p>
-            </div>
-          </div>
-          <div class="diff-item reveal reveal-delay-2">
-            <div class="diff-icon-wrap teal">🗺</div>
-            <div>
-              <h4>Google Meu Negócio incluído</h4>
-              <p>
-                Configuramos e otimizamos seu perfil no Google. Seu negócio
-                aparece no mapa e nas buscas locais logo no dia do lançamento.
-              </p>
-            </div>
-          </div>
-          <div class="diff-item reveal reveal-delay-3">
-            <div class="diff-icon-wrap amber">🤝</div>
-            <div>
-              <h4>100% feito por nós — você não precisa fazer nada</h4>
-              <p>
-                Endereço do site, espaço na internet, visual, escrita, Google e WhatsApp. Do início
-                ao fim, é com a gente. Você foca no seu negócio enquanto a
-                Mappia constrói e mantém o seu canal de vendas.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="diff-visual reveal reveal-delay-2">
-          <div class="diff-visual-bg"></div>
-          <div class="diff-score-card">
-            <div class="diff-score-label">Avaliação de Qualidade (Google)</div>
-            <div class="diff-score-val">Nota A</div>
-            <div class="diff-score-badge">Excelente</div>
-            <div class="diff-bar-wrap">
-              <div class="diff-bar-label">
-                <span>Rapidez no Celular</span><span>✓</span>
-              </div>
-              <div class="diff-bar-track">
-                <div class="diff-bar-fill" style="width: 100%"></div>
-              </div>
-            </div>
-            <div class="diff-bar-wrap" style="margin-top: 8px">
-              <div class="diff-bar-label"><span>Fácil de Encontrar</span><span>✓</span></div>
-              <div class="diff-bar-track">
-                <div class="diff-bar-fill" style="width: 100%"></div>
-              </div>
-            </div>
-            <div class="diff-bar-wrap" style="margin-top: 8px">
-              <div class="diff-bar-label">
-                <span>Fácil de Usar</span><span>✓</span>
-              </div>
-              <div class="diff-bar-track">
-                <div class="diff-bar-fill" style="width: 100%"></div>
-              </div>
-            </div>
-          </div>
-          <div class="diff-tags">
-            <div class="diff-tag">Cadeado de Segurança</div>
-            <div class="diff-tag">Proteção de Dados</div>
-            <div class="diff-tag">Textos Escritos à Mão</div>
-            <div class="diff-tag">Foco no Celular</div>
-            <div class="diff-tag">WhatsApp Direto</div>
-            <div class="diff-tag">Pronto para Anúncios</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- DEPOIMENTOS -->
-    <section class="section">
-      <div class="section-label reveal">Quem já está convertendo</div>
-      <h2 class="section-title reveal reveal-delay-1">
-        Negócios reais que <em>abriram um novo canal de vendas</em>
-      </h2>
-
-      <div class="testimonials-grid">
-        <div class="testimonial-card reveal">
-          <div class="testimonial-stars">★★★★★</div>
-          <div class="testimonial-text">
-            "Em três semanas do site no ar já recebi mensagens de clientes novos
-            que me acharam no Google. Antes eu dependia só de indicação."
-          </div>
-          <div class="testimonial-author">
-            <div
-              class="author-avatar"
-              style="background: #e6f1fb; color: #1560bd"
-            >
-              RS
-            </div>
-            <div>
-              <div class="author-name">Ricardo S.</div>
-              <div class="author-role">Barbearia Clássica · Niterói, RJ</div>
-            </div>
-          </div>
-        </div>
-        <div class="testimonial-card reveal reveal-delay-1">
-          <div class="testimonial-stars">★★★★★</div>
-          <div class="testimonial-text">
-            "O processo foi rápido e simples. Passei menos de 30 minutos no
-            briefing e em 10 dias o site estava no ar, melhor do que eu
-            esperava."
-          </div>
-          <div class="testimonial-author">
-            <div
-              class="author-avatar"
-              style="background: #e1f5ee; color: #0f6e56"
-            >
-              AC
-            </div>
-            <div>
-              <div class="author-name">Ana C.</div>
-              <div class="author-role">
-                Clínica de Estética · São Gonçalo, RJ
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="testimonial-card reveal reveal-delay-2">
-          <div class="testimonial-stars">★★★★★</div>
-          <div class="testimonial-text">
-            "Meu site antigo era lento e feio. Depois da Mappia os clientes
-            comentam o quanto o site ficou profissional. Faz diferença na
-            percepção."
-          </div>
-          <div class="testimonial-author">
-            <div
-              class="author-avatar"
-              style="background: #fff8e1; color: #b45309"
-            >
-              MF
-            </div>
-            <div>
-              <div class="author-name">Marcos F.</div>
-              <div class="author-role">Oficina Mecânica · Niterói, RJ</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA INTERMEDIÁRIO -->
-    <section class="cta-section">
-      <div class="cta-bg"></div>
-      <div class="cta-content">
-        <div class="section-label">Comece hoje</div>
-        <h2 class="cta-title">Quanto você está deixando na mesa <em>todo dia</em>?</h2>
-        <p class="cta-sub">
-          Cada dia sem um posicionamento digital forte é um dia que seu
-          concorrente fecha negócios que seriam seus. Nossa consultoria inicial
-          é gratuita e sem compromisso.
-        </p>
-        <div class="cta-actions">
-          <a
-            href="https://wa.me/5531990781307?text=Olá%2C+vim+pelo+site+e+quero+agendar+meu+diagnóstico+gratuito."
-            class="btn-white"
-          >
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-              <path
-                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"
-              />
-              <path
-                d="M12 0C5.373 0 0 5.373 0 12c0 2.117.554 4.103 1.523 5.826L.057 23.215c-.094.32.195.608.515.514l5.389-1.466A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-4.993-1.365l-.357-.212-3.697 1.007.968-3.768-.232-.368A9.817 9.817 0 012.182 12C2.182 6.58 6.58 2.182 12 2.182S21.818 6.58 21.818 12 17.42 21.818 12 21.818z"
-              />
-            </svg>
-            Agendar Diagnóstico Gratuito
-          </a>
-          <a
-            href="https://wa.me/5531990781307?text=Olá%2C+vim+pelo+site+e+quero+falar+com+um+consultor."
-            class="btn-outline-white"
-            >Falar com um Consultor</a
-          >
-        </div>
-        <p class="cta-note">
-          Diagnóstico gratuito · Sem compromisso · Resposta em até 1h
-        </p>
-      </div>
-    </section>
-
-    <!-- FAQ -->
-    <section class="section" id="faq">
-      <div class="section-label reveal">Dúvidas</div>
-      <h2
-        class="section-title reveal reveal-delay-1"
-        style="margin: 0 auto 0.75rem"
-      >
-        Perguntas frequentes
-      </h2>
-      <p class="section-sub reveal reveal-delay-2" style="margin: 0 auto 1rem">
-        Ainda com dúvida? É só chamar no WhatsApp.
+      <p class="cta-note">
+        Diagnóstico gratuito · Sem compromisso · Resposta em até 1h
       </p>
+    </div>
+  </section>
 
-      <div class="faq-layout reveal reveal-delay-1">
-        <div class="faq-item open">
-          <button class="faq-trigger">
-            O diagnóstico realmente é gratuito?
-            <div class="faq-icon">+</div>
-          </button>
-          <div class="faq-body">
-            <p>
-              Sim. Nossa primeira conversa é 100% gratuita e sem compromisso.
-              Analisamos a situação do seu negócio, mostramos o potencial de
-              crescimento e só então apresentamos o que faz mais sentido para
-              você. Você decide com total liberdade.
-            </p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-trigger">
-            O que está incluído na solução?
-            <div class="faq-icon">+</div>
-          </button>
-          <div class="faq-body">
-            <p>
-              O endereço do seu site (o seu-nome.com.br), o aluguel do espaço na internet 
-              para ele funcionar 24h, segurança contra invasões, estrutura visual 
-              profissional, textos persuasivos, integração direta com seu WhatsApp
-              e o seu perfil no mapa do Google. Cuidamos de absolutamente tudo — você não precisa se preocupar
-              com nenhum detalhe técnico.
-            </p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-trigger">
-            Qual o prazo real de entrega?
-            <div class="faq-icon">+</div>
-          </button>
-          <div class="faq-body">
-            <p>
-              10 dias corridos após o diagnóstico e briefing. Sendo: até D+8
-              para desenvolvimento, D+9 para homologação e D+10 para go-live.
-              Você tem dias adicionais para solicitar ajustes — e nós executamos
-              rapidamente.
-            </p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-trigger">
-            Preciso enviar os textos ou saber de tecnologia?
-            <div class="faq-icon">+</div>
-          </button>
-          <div class="faq-body">
-            <p>
-              Não precisa de nada disso. Com base no briefing, a Mappia cria
-              toda a estratégia e os textos usando inteligência artificial e
-              copywriting especializado. Você lê, ajusta o que quiser e valida.
-              Tecnologia, design e infraestrutura ficam 100% com a gente.
-            </p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-trigger">
-            E se eu quiser suporte e melhorias depois do lançamento?
-            <div class="faq-icon">+</div>
-          </button>
-          <div class="faq-body">
-            <p>
-              A Mappia oferece planos de crescimento contínuo com manutenção,
-              atualizações, suporte técnico e novas otimizações. Seu canal de
-              vendas continua evoluindo junto com o seu negócio. Converse com
-              um consultor para entender a melhor opção.
-            </p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-trigger">
-            Vocês atendem qualquer segmento?
-            <div class="faq-icon">+</div>
-          </button>
-          <div class="faq-body">
-            <p>
-              Sim. Temos experiência com barbearias, salões, clínicas,
-              restaurantes, oficinas, advogados, contadores e outros negócios
-              locais. Cada solução é personalizada para o seu mercado e o seu
-              público.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+  <!-- FAQ -->
+  <section class="section" id="faq">
+    <div class="section-label reveal">Dúvidas</div>
+    <h2 class="section-title reveal reveal-delay-1" style="margin: 0 auto 0.75rem">
+      Perguntas frequentes
+    </h2>
+    <p class="section-sub reveal reveal-delay-2" style="margin: 0 auto 1rem">
+      Ainda com dúvida? É só chamar no WhatsApp.
+    </p>
 
-    <!-- FOOTER -->
-    <footer>
-      <div class="footer-inner">
-        <div class="footer-brand">
-          <div class="footer-brand-name">Mappia Digital</div>
+    <div class="faq-layout reveal reveal-delay-1">
+      <div class="faq-item open">
+        <button class="faq-trigger" type="button">
+          O diagnóstico realmente é gratuito?
+          <div class="faq-icon">+</div>
+        </button>
+        <div class="faq-body">
           <p>
-            Posicionamento digital e novos canais de venda para pequenos
-            negócios locais. Do diagnóstico ao go-live, cuidamos de tudo.
+            Sim. Nossa primeira conversa é 100% gratuita e sem compromisso.
+            Analisamos a situação do seu negócio, mostramos o potencial de
+            crescimento e só então apresentamos o que faz mais sentido para
+            você. Você decide com total liberdade.
           </p>
         </div>
-        <div class="footer-col">
-          <h5>Soluções</h5>
-          <ul>
-            <li><a href="#solucao">Nossa Solução</a></li>
-            <li><a href="#como-funciona">Como funciona</a></li>
-            <li><a href="#diferenciais">Diferenciais</a></li>
-            <li><a href="https://wa.me/5531990781307?text=Olá%2C+quero+agendar+um+diagnóstico+gratuito.">Diagnóstico Gratuito</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h5>Empresa</h5>
-          <ul>
-            <li><a href="#como-funciona">Como funciona</a></li>
-            <li><a href="#diferenciais">Diferenciais</a></li>
-            <li><a href="#faq">FAQ</a></li>
-            <li><a href="https://wa.me/5531990781307">Falar conosco</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h5>Contato</h5>
-          <ul>
-            <li><a href="https://wa.me/5531990781307">WhatsApp</a></li>
-            <li>
-              <a href="https://www.instagram.com/mappiadigital"
-                >@mappiadigital</a
-              >
-            </li>
-            <li>
-              <a href="mailto:mappiadigital@gmail.com"
-                >mappiadigital@gmail.com</a
-              >
-            </li>
-            <li><a href="#">mappia.com.br</a></li>
-          </ul>
+      </div>
+      <div class="faq-item">
+        <button class="faq-trigger" type="button">
+          O que está incluído na solução?
+          <div class="faq-icon">+</div>
+        </button>
+        <div class="faq-body">
+          <p>
+            O endereço do seu site (o seu-nome.com.br), o aluguel do espaço na internet
+            para ele funcionar 24h, segurança contra invasões, estrutura visual
+            profissional, textos persuasivos, integração direta com seu WhatsApp
+            e o seu perfil no mapa do Google. Cuidamos de absolutamente tudo — você não precisa se preocupar
+            com nenhum detalhe técnico.
+          </p>
         </div>
       </div>
-      <div class="footer-bottom">
-        <p>© 2026 Mappia Digital. Todos os direitos reservados.</p>
-        <!-- <p>CNPJ 00.000.000/0001-00 · Belo Horizonte, MG</p> -->
+      <div class="faq-item">
+        <button class="faq-trigger" type="button">
+          Qual o prazo real de entrega?
+          <div class="faq-icon">+</div>
+        </button>
+        <div class="faq-body">
+          <p>
+            10 dias corridos após o diagnóstico e briefing. Sendo: até D+8
+            para desenvolvimento, D+9 para homologação e D+10 para go-live.
+            Você tem dias adicionais para solicitar ajustes — e nós executamos
+            rapidamente.
+          </p>
+        </div>
       </div>
-    </footer>
+      <div class="faq-item">
+        <button class="faq-trigger" type="button">
+          Preciso enviar os textos ou saber de tecnologia?
+          <div class="faq-icon">+</div>
+        </button>
+        <div class="faq-body">
+          <p>
+            Não precisa de nada disso. Com base no briefing, a Mappia cria
+            toda a estratégia e os textos usando inteligência artificial e
+            copywriting especializado. Você lê, ajusta o que quiser e valida.
+            Tecnologia, design e infraestrutura ficam 100% com a gente.
+          </p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-trigger" type="button">
+          E se eu quiser suporte e melhorias depois do lançamento?
+          <div class="faq-icon">+</div>
+        </button>
+        <div class="faq-body">
+          <p>
+            A Mappia oferece planos de crescimento contínuo com manutenção,
+            atualizações, suporte técnico e novas otimizações. Seu canal de
+            vendas continua evoluindo junto com o seu negócio. Converse com
+            um consultor para entender a melhor opção.
+          </p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-trigger" type="button">
+          Vocês atendem qualquer segmento?
+          <div class="faq-icon">+</div>
+        </button>
+        <div class="faq-body">
+          <p>
+            Sim. Temos experiência com barbearias, salões, clínicas,
+            restaurantes, oficinas, advogados, contadores e outros negócios
+            locais. Cada solução é personalizada para o seu mercado e o seu
+            público.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- WHATSAPP FLOAT -->
-    <a
-      class="wa-float"
-      href="https://wa.me/5531990781307?text=Olá%2C+vim+pelo+site+e+gostaria+de+mais+informações."
-      title="Falar no WhatsApp"
-      aria-label="Abrir WhatsApp"
-    >
-      <div class="wa-pulse"></div>
-      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path
-          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"
-        />
-        <path
-          d="M12 0C5.373 0 0 5.373 0 12c0 2.117.554 4.103 1.523 5.826L.057 23.215c-.094.32.195.608.515.514l5.389-1.466A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-4.993-1.365l-.357-.212-3.697 1.007.968-3.768-.232-.368A9.817 9.817 0 012.182 12C2.182 6.58 6.58 2.182 12 2.182S21.818 6.58 21.818 12 17.42 21.818 12 21.818z"
-        />
-      </svg>
-    </a>
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-brand-name">Mappia Digital</div>
+        <p>
+          Posicionamento digital e novos canais de venda para pequenos
+          negócios locais. Do diagnóstico ao go-live, cuidamos de tudo.
+        </p>
+      </div>
+      <div class="footer-col">
+        <h5>Soluções</h5>
+        <ul>
+          <li><a href="#solucao">Nossa Solução</a></li>
+          <li><a href="#como-funciona">Como funciona</a></li>
+          <li><a href="#diferenciais">Diferenciais</a></li>
+          <li><a href="https://wa.me/5531990781307?text=Olá%2C+quero+agendar+um+diagnóstico+gratuito.">Diagnóstico
+              Gratuito</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Empresa</h5>
+        <ul>
+          <li><a href="#como-funciona">Como funciona</a></li>
+          <li><a href="#diferenciais">Diferenciais</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="https://wa.me/5531990781307">Falar conosco</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contato</h5>
+        <ul>
+          <li><a href="https://wa.me/5531990781307">WhatsApp</a></li>
+          <li>
+            <a href="https://www.instagram.com/mappiadigital">@mappiadigital</a>
+          </li>
+          <li>
+            <a href="mailto:mappiadigital@gmail.com">mappiadigital@gmail.com</a>
+          </li>
 
-    <script>
-      // Nav scroll
-      const nav = document.getElementById("nav");
-      window.addEventListener("scroll", () => {
-        nav.classList.toggle("scrolled", window.scrollY > 20);
-      });
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Mappia Digital. Todos os direitos reservados.</p>
+      <!-- <p>CNPJ 00.000.000/0001-00 · Belo Horizonte, MG</p> -->
+    </div>
+  </footer>
 
-      // Reveal on scroll
-      const reveals = document.querySelectorAll(".reveal");
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((e) => {
-            if (e.isIntersecting) {
-              e.target.classList.add("visible");
-              observer.unobserve(e.target);
-            }
-          });
-        },
-        { threshold: 0.1, rootMargin: "0px 0px -40px 0px" },
-      );
-      reveals.forEach((el) => observer.observe(el));
+  <!-- WHATSAPP FLOAT -->
+  <a class="wa-float" href="https://wa.me/5531990781307?text=Olá%2C+vim+pelo+site+e+gostaria+de+mais+informações."
+    title="Falar no WhatsApp" aria-label="Abrir WhatsApp">
+    <div class="wa-pulse"></div>
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+      <path
+        d="M12 0C5.373 0 0 5.373 0 12c0 2.117.554 4.103 1.523 5.826L.057 23.215c-.094.32.195.608.515.514l5.389-1.466A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-4.993-1.365l-.357-.212-3.697 1.007.968-3.768-.232-.368A9.817 9.817 0 012.182 12C2.182 6.58 6.58 2.182 12 2.182S21.818 6.58 21.818 12 17.42 21.818 12 21.818z" />
+    </svg>
+  </a>
 
-      // Process steps
-      const steps = document.querySelectorAll(".process-step");
-      const paneStepEl = document.getElementById("pane-step");
-      const paneTitleEl = document.getElementById("pane-title");
-      const paneTitles = ["Briefing", "Desenvolvimento", "Revisão", "Go-live"];
+  <script>
+    // Nav scroll
+    const nav = document.getElementById("nav");
+    window.addEventListener("scroll", () => {
+      nav.classList.toggle("scrolled", window.scrollY > 20);
+    });
 
-      steps.forEach((step, i) => {
-        step.addEventListener("click", () => {
-          steps.forEach((s) => s.classList.remove("active"));
-          document
-            .querySelectorAll(".pane-card")
-            .forEach((p) => p.classList.remove("active"));
-          step.classList.add("active");
-          const pane = document.getElementById("pane-" + i);
-          if (pane) pane.classList.add("active");
-          if (paneStepEl) paneStepEl.textContent = "Passo " + (i + 1);
-          if (paneTitleEl) paneTitleEl.textContent = paneTitles[i];
+    // Reveal on scroll
+    const reveals = document.querySelectorAll(".reveal");
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) {
+            e.target.classList.add("visible");
+            observer.unobserve(e.target);
+          }
         });
-      });
+      },
+      { threshold: 0.1, rootMargin: "0px 0px -40px 0px" },
+    );
+    reveals.forEach((el) => observer.observe(el));
 
-      // FAQ
-      document.querySelectorAll(".faq-trigger").forEach((btn) => {
-        btn.addEventListener("click", () => {
-          const item = btn.closest(".faq-item");
-          const wasOpen = item.classList.contains("open");
-          document
-            .querySelectorAll(".faq-item")
-            .forEach((i) => i.classList.remove("open"));
-          if (!wasOpen) item.classList.add("open");
+    // Process steps
+    const steps = document.querySelectorAll(".process-step");
+    const paneStepEl = document.getElementById("pane-step");
+    const paneTitleEl = document.getElementById("pane-title");
+    const paneTitles = ["Briefing", "Desenvolvimento", "Revisão", "Go-live"];
+
+    steps.forEach((step, i) => {
+      step.addEventListener("click", () => {
+        steps.forEach((s) => s.classList.remove("active"));
+        document
+          .querySelectorAll(".pane-card")
+          .forEach((p) => p.classList.remove("active"));
+        step.classList.add("active");
+        const pane = document.getElementById("pane-" + i);
+        if (pane) pane.classList.add("active");
+        if (paneStepEl) paneStepEl.textContent = "Passo " + (i + 1);
+        if (paneTitleEl) paneTitleEl.textContent = paneTitles[i];
+      });
+    });
+
+    // FAQ
+    document.querySelectorAll(".faq-trigger").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const item = btn.closest(".faq-item");
+        const wasOpen = item.classList.contains("open");
+        document
+          .querySelectorAll(".faq-item")
+          .forEach((i) => i.classList.remove("open"));
+        if (!wasOpen) item.classList.add("open");
+      });
+    });
+
+    // Counter animation
+    function animateCounter(el, target, suffix = "") {
+      let start = 0;
+      const duration = 1200;
+      const startTime = performance.now();
+      const update = (t) => {
+        const progress = Math.min((t - startTime) / duration, 1);
+        const eased = 1 - Math.pow(1 - progress, 3);
+        el.textContent = Math.round(eased * target) + suffix;
+        if (progress < 1) requestAnimationFrame(update);
+      };
+      requestAnimationFrame(update);
+    }
+    const statNums = document.querySelectorAll(".hero-stat-num");
+    const statsObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) {
+            const text = e.target.textContent.trim();
+            if (text === "10 dias") animateCounter(e.target, 10, " dias");
+            else if (text === "24h") animateCounter(e.target, 24, "h");
+            else if (text === "100%") animateCounter(e.target, 100, "%");
+            statsObserver.unobserve(e.target);
+          }
         });
-      });
+      },
+      { threshold: 0.5 },
+    );
+    statNums.forEach((el) => statsObserver.observe(el));
+  </script>
+</body>
 
-      // Counter animation
-      function animateCounter(el, target, suffix = "") {
-        let start = 0;
-        const duration = 1200;
-        const startTime = performance.now();
-        const update = (t) => {
-          const progress = Math.min((t - startTime) / duration, 1);
-          const eased = 1 - Math.pow(1 - progress, 3);
-          el.textContent = Math.round(eased * target) + suffix;
-          if (progress < 1) requestAnimationFrame(update);
-        };
-        requestAnimationFrame(update);
-      }
-      const statNums = document.querySelectorAll(".hero-stat-num");
-      const statsObserver = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((e) => {
-            if (e.isIntersecting) {
-              const text = e.target.textContent.trim();
-              if (text === "10 dias") animateCounter(e.target, 10, " dias");
-              else if (text === "24h") animateCounter(e.target, 24, "h");
-              else if (text === "100%") animateCounter(e.target, 100, "%");
-              statsObserver.unobserve(e.target);
-            }
-          });
-        },
-        { threshold: 0.5 },
-      );
-      statNums.forEach((el) => statsObserver.observe(el));
-    </script>
-  </body>
 </html>
